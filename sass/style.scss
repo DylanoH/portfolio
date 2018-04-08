@@ -1,6 +1,5 @@
 $course-background-color: #2d2d2d;
 
-
 @mixin course-style() {
   width: 50vw;
   height: 50vh;
@@ -13,10 +12,26 @@ $course-background-color: #2d2d2d;
 
   border: 2px solid white;
 
+  &:link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  &:visited {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+  }
+
   &:hover {
     text-decoration: none;
     color: rgb(180, 180, 180);
   }
+
+  &:active {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+
 }
 
 *, *:before, *:after {
@@ -40,24 +55,43 @@ html, body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
+  .uxu {
+    @include course-style();
+    border-top: 0;
+    border-left: 0;
+
+  }
+
+  .dand {
+    @include course-style();
+    border-top: 0;
+    border-right: 0;
+
+
+    &:hover {
+      background-color: $course-background-color;
+      background-image: url("../resources/coding-bg.jpg");
+      background-size: cover;
+      color: white;
+
+    }
+  }
+
+  .sco {
+    @include course-style();
+    border-left: 0;
+    border-bottom: 0;
+  }
+
+  .pt {
+    @include course-style();
+    border-bottom: 0;
+    border-right: 0;
+  }
 }
 
-.uxu {
-  @include course-style();
 
-}
-
-.dand {
-  @include course-style();
-}
-
-.sco {
-  @include course-style();
-}
-
-.pt {
-  @include course-style();
-}
 
 .me {
   position: absolute;
@@ -75,4 +109,10 @@ html, body {
     text-decoration: none;
     color: rgb(105, 105, 105);
   }
+}
+
+main .uxu {
+  background-color: green;
+  height: 500px;
+  width: 200px;
 }

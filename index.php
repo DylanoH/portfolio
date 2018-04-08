@@ -1,45 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>Portfolio</title>
+    <?php include_once('includes/head.php'); ?>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script type="text/javascript" src="jquery/jquery.min.js"></script>
-
-    <link rel="stylesheet" href="stylesheets/style.css">
   </head>
 
   <body>
 
     <div class="courses">
-      <a href="#" class="uxu">
+      <a href="modules/uxu.php" class="uxu">
         <div>
           UXU
         </div>
       </a>
 
-      <a href="#" class="dand">
+      <a href="modules/ded.php" class="dand">
         <div>
-          D&D
+          DED
         </div>
       </a>
 
-      <a href="#" class="sco">
+      <a href="modules/sco.php" class="sco">
         <div>
           SCO
         </div>
       </a>
 
-      <a href="#" class="pt">
+      <a href="modules/pt.php" class="pt">
         <div>
           PT
         </div>
       </a>
 
-      <a href="#"  class="me">
+      <a href="modules/me.php"  class="me">
         <div>
           ME
         </div>
@@ -47,17 +41,7 @@
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
-    <script src="jquery/jquery.easing.min.js"></script>
+    <script src="javascripts/jquery/jquery.easing.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script type="text/javascript" src="javascripts/script.js"></script>
