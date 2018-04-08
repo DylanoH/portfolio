@@ -2,7 +2,9 @@
 <html>
   <head>
     <title>Portfolio</title>
-    <?php include_once('includes/head.php'); ?>
+    <?php require 'app/start.php'; ?>
+    <?php require 'includes/head.php'; ?>
+
 
   </head>
 
