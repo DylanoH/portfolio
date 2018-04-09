@@ -4,22 +4,35 @@
 
   define('APP_ROOT', __DIR__);
   define('VIEW_ROOT', APP_ROOT . '/views');
-  define('BASE_URL', 'http://localhost/portfolio');
+  define('BASE_URL', 'http://localhost/semester%202%20portfolio');
 
-  $dbserver = 'mysql.stackcp.com:50366';
-  $dbname = '	portfolio-33355b88';
-  $dbpass = 'cnimjm096d';
-  //
+  $dbserver = 'mysql.stackcp.com:49649';
+  $dbname = 'cmstutorial-33354415';
+  $dbpass = '1qaz2wsx';
+
+
+  // $con = new PDO('mysql:host=mysql.stackcp.com:49649; dbname=cmstutorial-33354415', $dbname, $dbpass);
+
+
+  try {
+    $con = new PDO('mysql:host=mysql.stackcp.com:49649; dbname=cmstutorial-33354415', $dbname, $dbpass);
+    //echo "connection succesful";
+  }
+  catch(PDOException  $e) {
+    $error_message = $e->getMessage();
+    echo "an error has occured: $error_message";
+  }
+
+
   // try {
-  //   $con = new PDO('mysql:host=' . $dbserver . '; dbname=' . $dbname, $dbname, $dbpass);
-  //   //echo "connection succesful";
+  //   $con = mysqli_connect($dbserver, $dbname, $dbpass, $dbname);
+  //   echo "connection succesful";
   // }
-  // catch(PDOException  $e) {
+  // catch(Exception $e) {
   //   $error_message = $e->getMessage();
   //   echo "an error has occured: $error_message";
   // }
 
-
- // require 'functions.php';
+ require 'functions.php';
 
  ?>

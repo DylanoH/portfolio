@@ -12,7 +12,56 @@ html, body {
   box-sizing: border-box;
 }
 
-/* line 50, ../sass/style.scss */
+/* line 51, ../sass/style.scss */
+.wrapper {
+  margin: 0 auto;
+  padding: 0px;
+  width: 100%;
+  background-color: #fff;
+}
+
+/* line 59, ../sass/style.scss */
+h1, h2, h3, h4, h5 {
+  font-weight: 200;
+}
+
+/* line 63, ../sass/style.scss */
+input, textarea {
+  font-size: inherit;
+}
+
+/* line 67, ../sass/style.scss */
+input[type="text"], textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #bbb;
+}
+
+/* line 74, ../sass/style.scss */
+label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* line 80, ../sass/style.scss */
+table {
+  width: 100%;
+  table-layout: fixed;
+  margin-bottom: 20px;
+}
+
+/* line 86, ../sass/style.scss */
+table th {
+  text-align: left;
+}
+
+/* line 90, ../sass/style.scss */
+.faded {
+  color: #bbb;
+}
+
+/* line 95, ../sass/style.scss */
 .courses {
   width: 100vw;
   height: 100vh;
@@ -22,7 +71,7 @@ html, body {
   justify-content: center;
   align-items: center;
 }
-/* line 59, ../sass/style.scss */
+/* line 104, ../sass/style.scss */
 .courses .uxu {
   width: 50vw;
   height: 50vh;
@@ -33,8 +82,6 @@ html, body {
   justify-content: center;
   align-items: center;
   border: 2px solid white;
-  border-top: 0;
-  border-left: 0;
 }
 /* line 15, ../sass/style.scss */
 .courses .uxu:link {
@@ -56,8 +103,8 @@ html, body {
   text-decoration: none;
   color: white;
 }
-/* line 66, ../sass/style.scss */
-.courses .dand {
+/* line 109, ../sass/style.scss */
+.courses .ded {
   width: 50vw;
   height: 50vh;
   background-color: #2d2d2d;
@@ -67,37 +114,35 @@ html, body {
   justify-content: center;
   align-items: center;
   border: 2px solid white;
-  border-top: 0;
-  border-right: 0;
 }
 /* line 15, ../sass/style.scss */
-.courses .dand:link {
+.courses .ded:link {
   text-decoration: none;
   color: white;
 }
 /* line 19, ../sass/style.scss */
-.courses .dand:visited {
+.courses .ded:visited {
   text-decoration: none;
   color: white;
 }
 /* line 25, ../sass/style.scss */
-.courses .dand:hover {
+.courses .ded:hover {
   text-decoration: none;
   color: #b4b4b4;
 }
 /* line 30, ../sass/style.scss */
-.courses .dand:active {
+.courses .ded:active {
   text-decoration: none;
   color: white;
 }
-/* line 72, ../sass/style.scss */
-.courses .dand:hover {
+/* line 113, ../sass/style.scss */
+.courses .ded:hover {
   background-color: #2d2d2d;
   background-image: url("../resources/coding-bg.jpg");
   background-size: cover;
   color: white;
 }
-/* line 81, ../sass/style.scss */
+/* line 122, ../sass/style.scss */
 .courses .sco {
   width: 50vw;
   height: 50vh;
@@ -108,8 +153,6 @@ html, body {
   justify-content: center;
   align-items: center;
   border: 2px solid white;
-  border-left: 0;
-  border-bottom: 0;
 }
 /* line 15, ../sass/style.scss */
 .courses .sco:link {
@@ -131,7 +174,7 @@ html, body {
   text-decoration: none;
   color: white;
 }
-/* line 87, ../sass/style.scss */
+/* line 126, ../sass/style.scss */
 .courses .pt {
   width: 50vw;
   height: 50vh;
@@ -142,8 +185,6 @@ html, body {
   justify-content: center;
   align-items: center;
   border: 2px solid white;
-  border-bottom: 0;
-  border-right: 0;
 }
 /* line 15, ../sass/style.scss */
 .courses .pt:link {
@@ -165,9 +206,8 @@ html, body {
   text-decoration: none;
   color: white;
 }
-
-/* line 96, ../sass/style.scss */
-.me {
+/* line 130, ../sass/style.scss */
+.courses .me {
   position: absolute;
   width: 400px;
   height: 400px;
@@ -179,15 +219,13 @@ html, body {
   color: black;
   font-size: 90px;
 }
-/* line 108, ../sass/style.scss */
-.me:hover {
+/* line 142, ../sass/style.scss */
+.courses .me:hover {
   text-decoration: none;
   color: dimgray;
 }
-
-/* line 114, ../sass/style.scss */
-main .uxu {
-  background-color: green;
-  height: 500px;
-  width: 200px;
+/* line 148, ../sass/style.scss */
+.courses .course {
+  text-transform: uppercase;
+  font-weight: bold;
 }
