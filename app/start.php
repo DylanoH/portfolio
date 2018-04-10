@@ -4,7 +4,7 @@
 
   define('APP_ROOT', __DIR__);
   define('VIEW_ROOT', APP_ROOT . '/views');
-  define('BASE_URL', 'http://localhost/semester%202%20portfolio');
+  define('BASE_URL', 'http://localhost/portfolio');
 
   $dbserver = 'mysql.stackcp.com:49649';
   $dbname = 'cmstutorial-33354415';

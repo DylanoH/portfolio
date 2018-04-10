@@ -61,7 +61,7 @@ table th {
   color: #bbb;
 }
 
-/* line 95, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 .courses {
   width: 100vw;
   height: 100vh;
@@ -71,7 +71,7 @@ table th {
   justify-content: center;
   align-items: center;
 }
-/* line 104, ../sass/style.scss */
+/* line 108, ../sass/style.scss */
 .courses .uxu {
   width: 50vw;
   height: 50vh;
@@ -103,7 +103,7 @@ table th {
   text-decoration: none;
   color: white;
 }
-/* line 109, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 .courses .ded {
   width: 50vw;
   height: 50vh;
@@ -135,14 +135,14 @@ table th {
   text-decoration: none;
   color: white;
 }
-/* line 113, ../sass/style.scss */
+/* line 117, ../sass/style.scss */
 .courses .ded:hover {
   background-color: #2d2d2d;
   background-image: url("../resources/coding-bg.jpg");
   background-size: cover;
   color: white;
 }
-/* line 122, ../sass/style.scss */
+/* line 126, ../sass/style.scss */
 .courses .sco {
   width: 50vw;
   height: 50vh;
@@ -174,7 +174,7 @@ table th {
   text-decoration: none;
   color: white;
 }
-/* line 126, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 .courses .pt {
   width: 50vw;
   height: 50vh;
@@ -206,7 +206,7 @@ table th {
   text-decoration: none;
   color: white;
 }
-/* line 130, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 .courses .me {
   position: absolute;
   width: 400px;
@@ -219,12 +219,12 @@ table th {
   color: black;
   font-size: 90px;
 }
-/* line 142, ../sass/style.scss */
+/* line 146, ../sass/style.scss */
 .courses .me:hover {
   text-decoration: none;
   color: dimgray;
 }
-/* line 148, ../sass/style.scss */
+/* line 170, ../sass/style.scss */
 .courses .course {
   text-transform: uppercase;
   font-weight: bold;
