@@ -7,20 +7,20 @@
       Title
       <input type="text" name="title" id="title">
     </label>
-    <label for="label">
-      Labels
-      <input type="text" name="label" id="label">
+    <label for="content">
+      Content
+      <textarea name="content" id="content" rows="10" cols="30"></textarea>
     </label>
-    <label for="slug">
-      Slug
-    <input type="text" name="slug" id="slug">
+    <label for="image">
+      Image
+    <input type="text" name="image" id="image">
     </label>
-    <label for="body">
-      Body
-      <textarea name="body" id="body" rows="10" cols="30"></textarea>
+    <label for="vak">
+      Vak
+    <input type="text" name="vak" id="vak">
     </label>
 
-    <input type="submit" value="Add page">
+    <input type="submit" value="Add Assignment">
   </form>
 
 <?php require VIEW_ROOT . '/templates/footer.php'; ?>

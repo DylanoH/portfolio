@@ -170,7 +170,17 @@ table th {
   .course {
     text-transform: uppercase;
     font-weight: bold;
-  }
+    text-decoration: none;
 
+  }
+}
+
+// end course nest
+
+table .course {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
 
 }

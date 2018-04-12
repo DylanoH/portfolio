@@ -3,29 +3,28 @@
   require '../app/start.php';
 
   if (!empty($_POST)) {
-    $id     = $_POST['id'];
-    $label  = $_POST['label'];
-    $title  = $_POST['title'];
-    $slug   = $_POST['slug'];
-    $body   = $_POST['body'];
+    $id       = $_POST['id'];
+    $title    = $_POST['title'];
+    $content  = $_POST['content'];
+    $image    = $_POST['image'];
+    $vak      = $_POST['vak'];
 
-    $updatePage = $con->prepare("
-          UPDATE pages
+    $updateAssignment = $con->prepare("
+          UPDATE course
           SET
-            label = :label,
             title = :title,
-            slug = :slug,
-            body = :body,
-            updated = NOW()
-          WHERE id = :id
+            content = :content,
+            image = :image,
+            vak = :vak
+            WHERE id = :id
     ");
 
-    $updatePage->execute([
+    $updateAssignment->execute([
       'id'    => $id,
-      'label' => $label,
       'title' => $title,
-      'slug'  => $slug,
-      'body'  => $body
+      'content'  => $content,
+      'image'  => $image,
+      'vak'   => $vak
     ]);
 
     header('Location: ' . BASE_URL . '/admin/list.php');
@@ -36,15 +35,15 @@
     die();
   }
 
-  $page = $con->prepare("
-    SELECT id, title, label, body, slug
-    FROM pages
+  $assignment = $con->prepare("
+    SELECT id, title, content, image, vak
+    FROM course
     WHERE id = :id
   ");
 
-  $page->execute(['id' => $_GET['id']]);
+  $assignment->execute(['id' => $_GET['id']]);
 
-  $page = $page->fetch(PDO::FETCH_ASSOC);
+  $assignment = $assignment->fetch(PDO::FETCH_ASSOC);
 
   require VIEW_ROOT . '/admin/edit.php';
 

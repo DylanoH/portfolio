@@ -5,21 +5,21 @@
   //needs validation! check my other course
 
   if (!empty($_POST)) {
-    $label  = $_POST['label'];
-    $title  = $_POST['title'];
-    $slug   = $_POST['slug'];
-    $body   = $_POST['body'];
+    $title    = $_POST['title'];
+    $content  = $_POST['content'];
+    $image    = $_POST['image'];
+    $vak    = $_POST['vak'];
 
-    $insertPage = $con->prepare("
-      INSERT INTO pages(label, title, slug, body, created)
-      VALUES(:label, :title, :slug, :body, NOW())
+    $insertAssignment = $con->prepare("
+      INSERT INTO course(title, content, image, vak)
+      VALUES(:title, :content, :image, :vak)
     ");
 
-    $insertPage->execute([
-      'label' => $label,
+    $insertAssignment->execute([
       'title' => $title,
-      'slug'  => $slug,
-      'body'  => $body,
+      'content' => $content,
+      'image'  => $image,
+      'vak'  => $vak,
     ]);
 
     header('Location: ' . BASE_URL . '/admin/list.php');

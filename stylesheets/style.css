@@ -228,4 +228,13 @@ table th {
 .courses .course {
   text-transform: uppercase;
   font-weight: bold;
+  text-decoration: none;
+}
+
+/* line 180, ../sass/style.scss */
+table .course {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
 }
