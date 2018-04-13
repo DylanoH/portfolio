@@ -4,9 +4,9 @@
 
   define('APP_ROOT', __DIR__);
   define('VIEW_ROOT', APP_ROOT . '/views');
-  define('BASE_URL', 'http://localhost/portfolio');
+  define('BASE_URL', 'portfolio.dylanohartman.com');
 
-  $dbserver = 'mysql.stackcp.com:49649';
+  $dbserver = 'localhost';
   $dbname = 'cmstutorial-33354415';
   $dbpass = '1qaz2wsx';
 
@@ -15,7 +15,7 @@
 
 
   try {
-    $con = new PDO('mysql:host=mysql.stackcp.com:49649; dbname=cmstutorial-33354415', $dbname, $dbpass);
+    $con = new PDO('mysql:host=127.0.0.1; dbname=cmstutorial-33354415', $dbname, $dbpass);
     //echo "connection succesful";
   }
   catch(PDOException  $e) {

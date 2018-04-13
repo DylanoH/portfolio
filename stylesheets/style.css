@@ -13,7 +13,7 @@ html, body {
 }
 
 /* line 51, ../sass/style.scss */
-.wrapper {
+main {
   margin: 0 auto;
   padding: 0px;
   width: 100%;
@@ -231,10 +231,32 @@ table th {
   text-decoration: none;
 }
 
-/* line 180, ../sass/style.scss */
-table .course {
+/* line 182, ../sass/style.scss */
+.overview {
+  display: flex;
+  justify-content: space-around;
+}
+/* line 187, ../sass/style.scss */
+.overview .list-wrapper {
+  max-width: 20vw;
+}
+/* line 190, ../sass/style.scss */
+.overview .list-wrapper .list-headers {
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
+}
+/* line 194, ../sass/style.scss */
+.overview .list-wrapper .list-headers a {
+  color: black;
+}
+/* line 199, ../sass/style.scss */
+.overview .list-wrapper .list {
+  list-style-type: none;
+  padding: 0px 0px 0px 15px;
+  margin: 0px;
+}
+/* line 204, ../sass/style.scss */
+.overview .list-wrapper .list a {
   color: black;
 }

@@ -9,6 +9,22 @@ $(document).ready(function(){
 
 
 
+  $("#image").on("click", function() {
+    var imageName = $("#image").val();
+    if (imageName == "") {
+      alert("please select an image");
+      return false
+    }
+    else {
+      var extension = $("#image").val().split('.').pop().toLowerCase();
+      if (jQuery.inArray(exension, ['gif', 'png', 'jpg', 'jpeg']) == -1) {
+        alert("invalid file name");
+        $("#image").val('');
+        return false;
+      }
+    }
+  });
+
   //   particlesJS("particles-js", {
   //   "particles": {
   //     "number": {

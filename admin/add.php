@@ -7,8 +7,8 @@
   if (!empty($_POST)) {
     $title    = $_POST['title'];
     $content  = $_POST['content'];
-    $image    = $_POST['image'];
     $vak    = $_POST['vak'];
+    $image    = $_POST['image'];
 
     $insertAssignment = $con->prepare("
       INSERT INTO course(title, content, image, vak)

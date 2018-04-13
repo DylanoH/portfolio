@@ -2,22 +2,27 @@
 
   <h2>Add page</h2>
 
-  <form class="" action="<?php echo BASE_URL; ?>/admin/add.php" method="post" autocomplete="off">
+  <form class="" action="<?php echo BASE_URL; ?>/admin/add.php" method="post" autocomplete="off" enctype="multipart/form-data">
     <label for="title">
-      Title
+      <p>Title</p>
       <input type="text" name="title" id="title">
     </label>
     <label for="content">
-      Content
+      <p>Content</p>
       <textarea name="content" id="content" rows="10" cols="30"></textarea>
     </label>
     <label for="image">
-      Image
-    <input type="text" name="image" id="image">
+      <p>Image</p>
+    <input type="file" name="image" id="image">
     </label>
     <label for="vak">
-      Vak
-    <input type="text" name="vak" id="vak">
+      <p>Vak</p>
+
+    <input type="radio" name="vak" id="vak" value="uxu">uxu</input>
+    <input type="radio" name="vak" id="vak" value="ded">ded</input>
+    <input type="radio" name="vak" id="vak" value="sco">sco</input>
+    <input type="radio" name="vak" id="vak" value="pt">pt</input>
+    <input type="radio" name="vak" id="vak" value="me">me</input>
     </label>
 
     <input type="submit" value="Add Assignment">

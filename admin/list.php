@@ -20,6 +20,14 @@
 
 
 
+  $query = "
+    SELECT DISTINCT vak
+    FROM course
+  ";
+
+  $vakken = $con->query($query)->fetchAll(PDO::FETCH_ASSOC);
+
+
 
 
 

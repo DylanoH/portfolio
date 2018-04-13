@@ -48,9 +48,9 @@ html, body {
 }
 
 
-.wrapper {
+main {
   margin: 0 auto;
-  padding: 0px;;
+  padding: 0px;
   width: 100%;
   background-color: #fff;
 
@@ -177,10 +177,34 @@ table th {
 
 // end course nest
 
-table .course {
-  text-transform: uppercase;
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
+
+
+.overview {
+  display: flex;
+  justify-content: space-around;
+
+
+  .list-wrapper{
+    max-width: 20vw;
+
+    .list-headers {
+      text-transform: uppercase;
+      font-weight: bold;
+      text-decoration: none;
+      a {
+        color: black;
+      }
+    }
+
+    .list {
+      list-style-type :none;
+      padding: 0px 0px 0px 15px;
+      margin: 0px;
+
+      a {
+        color: black;
+      }
+    }
+  }
 
 }

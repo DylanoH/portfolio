@@ -13,4 +13,4 @@
   </head>
 
   <body>
-    <div class="wrapper">
+    <main>
