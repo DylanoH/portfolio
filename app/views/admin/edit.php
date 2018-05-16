@@ -1,7 +1,7 @@
 <?php require VIEW_ROOT . '/templates/header.php'; ?>
   <h2>Edit page</h2>
 
-  <form class="" action="<?php echo BASE_URL; ?>/admin/edit.php" method="post" autocomplete="off" enctype="multipart/form-data">
+  <form class="editAssignment" action="<?php echo BASE_URL; ?>/admin/edit.php" method="post" autocomplete="off" enctype="multipart/form-data">
     <label for="title">
       Title
       <input type="text" name="title" id="title" value="<?php echo e($assignment['title']); ?>">
@@ -12,7 +12,7 @@
     </label>
     <label for="image">
       Image
-      <input type="file" name="image" id="image" value="<?php echo e($assignment['image']); ?>">
+      <input type="file" name="image" id="image">
     </label>
     <label for="vak">
       <p>Vak</p>

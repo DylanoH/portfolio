@@ -26,4 +26,23 @@ $(document).ready(function(){
       });
   });
 
+  $("form.editAssignment").submit(function(e){
+      e.preventDefault();
+      var formData = new FormData(this);
+      formData.append("edit", "edit");
+
+      $.ajax({
+          type: "POST",
+          url: "/Portfolio/admin/edit.php",
+          data: formData,
+          cache: false,
+          contentType: false,
+          processData: false,
+          success: function(result){
+            alert(result);
+              window.location = "/Portfolio/admin/list.php";
+          }
+      });
+  });
+
 });
