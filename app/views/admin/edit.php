@@ -1,8 +1,7 @@
 <?php require VIEW_ROOT . '/templates/header.php'; ?>
-
   <h2>Edit page</h2>
 
-  <form class="" action="<?php echo BASE_URL; ?>/admin/edit.php" method="post" autocomplete="off">
+  <form class="" action="<?php echo BASE_URL; ?>/admin/edit.php" method="post" autocomplete="off" enctype="multipart/form-data">
     <label for="title">
       Title
       <input type="text" name="title" id="title" value="<?php echo e($assignment['title']); ?>">
@@ -13,11 +12,40 @@
     </label>
     <label for="image">
       Image
-      <input type="text" name="image" id="image" value="<?php echo e($assignment['image']); ?>">
+      <input type="file" name="image" id="image" value="<?php echo e($assignment['image']); ?>">
     </label>
     <label for="vak">
-      Vak
-      <input type="text" name="vak" id="vak" value="<?php echo e($assignment['vak']); ?>">
+      <p>Vak</p>
+
+      <input type="radio" name="vak" id="vak" value="uxu" <?php
+      if (e($assignment['vak']) == $uxu ) {
+        echo 'checked = "checked"';
+      }
+      ?>>uxu</input>
+      <input type="radio" name="vak" id="vak" value="uxu" <?php
+      if (e($assignment['vak']) == $ded ) {
+        echo 'checked = "checked"';
+      }
+      ?>>ded</input>
+      <input type="radio" name="vak" id="vak" value="uxu" <?php
+      if (e($assignment['vak']) == $sco ) {
+        echo 'checked = "checked"';
+      }
+      ?>>sco</input>
+      <input type="radio" name="vak" id="vak" value="uxu" <?php
+      if (e($assignment['vak']) == $pt ) {
+        echo 'checked = "checked"';
+      }
+      ?>>pt</input>
+      <input type="radio" name="vak" id="vak" value="uxu" <?php
+      if (e($assignment['vak']) == $me ) {
+        echo 'checked = "checked"';
+      }
+      ?>>me</input>
+
+
+
+
     </label>
 
 

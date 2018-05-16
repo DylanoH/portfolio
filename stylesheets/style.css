@@ -71,7 +71,7 @@ table th {
   justify-content: center;
   align-items: center;
 }
-/* line 108, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
 .courses .uxu {
   width: 50vw;
   height: 50vh;
@@ -103,7 +103,7 @@ table th {
   text-decoration: none;
   color: white;
 }
-/* line 113, ../sass/style.scss */
+/* line 108, ../sass/style.scss */
 .courses .ded {
   width: 50vw;
   height: 50vh;
@@ -135,14 +135,14 @@ table th {
   text-decoration: none;
   color: white;
 }
-/* line 117, ../sass/style.scss */
+/* line 112, ../sass/style.scss */
 .courses .ded:hover {
   background-color: #2d2d2d;
   background-image: url("../resources/coding-bg.jpg");
   background-size: cover;
   color: white;
 }
-/* line 126, ../sass/style.scss */
+/* line 121, ../sass/style.scss */
 .courses .sco {
   width: 50vw;
   height: 50vh;
@@ -174,7 +174,7 @@ table th {
   text-decoration: none;
   color: white;
 }
-/* line 130, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 .courses .pt {
   width: 50vw;
   height: 50vh;
@@ -206,7 +206,7 @@ table th {
   text-decoration: none;
   color: white;
 }
-/* line 134, ../sass/style.scss */
+/* line 129, ../sass/style.scss */
 .courses .me {
   position: absolute;
   width: 400px;
@@ -219,44 +219,44 @@ table th {
   color: black;
   font-size: 90px;
 }
-/* line 146, ../sass/style.scss */
+/* line 141, ../sass/style.scss */
 .courses .me:hover {
   text-decoration: none;
   color: dimgray;
 }
-/* line 170, ../sass/style.scss */
+/* line 149, ../sass/style.scss */
 .courses .course {
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
 }
 
-/* line 182, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 .overview {
   display: flex;
   justify-content: space-around;
 }
-/* line 187, ../sass/style.scss */
+/* line 166, ../sass/style.scss */
 .overview .list-wrapper {
   max-width: 20vw;
 }
-/* line 190, ../sass/style.scss */
+/* line 169, ../sass/style.scss */
 .overview .list-wrapper .list-headers {
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 194, ../sass/style.scss */
+/* line 173, ../sass/style.scss */
 .overview .list-wrapper .list-headers a {
   color: black;
 }
-/* line 199, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 .overview .list-wrapper .list {
   list-style-type: none;
   padding: 0px 0px 0px 15px;
   margin: 0px;
 }
-/* line 204, ../sass/style.scss */
+/* line 183, ../sass/style.scss */
 .overview .list-wrapper .list a {
   color: black;
 }

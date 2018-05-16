@@ -10,10 +10,12 @@
     <?php foreach ($content as $assignment): ?>
       <h2><?php echo e($assignment['title']); ?></h2>
 
+
+
       <p>
         <?php echo e($assignment['content']); ?>
       </p>
-
+      <img src="resources/uploads/<?php echo e($assignment['image']); ?>" alt="">
     <?php endforeach; ?>
 
 

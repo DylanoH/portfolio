@@ -2,6 +2,12 @@
 
   require '../app/start.php';
 
+  $ded = "ded";
+  $uxu = "uxu";
+  $sco = "sco";
+  $pt = "pt";
+  $me = "me";
+
   if (!empty($_POST)) {
     $id       = $_POST['id'];
     $title    = $_POST['title'];
@@ -44,6 +50,7 @@
   $assignment->execute(['id' => $_GET['id']]);
 
   $assignment = $assignment->fetch(PDO::FETCH_ASSOC);
+
 
   require VIEW_ROOT . '/admin/edit.php';
 

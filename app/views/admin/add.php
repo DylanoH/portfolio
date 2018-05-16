@@ -1,8 +1,10 @@
 <?php require VIEW_ROOT . '/templates/header.php'; ?>
 
+
+
   <h2>Add page</h2>
 
-  <form class="" action="<?php echo BASE_URL; ?>/admin/add.php" method="post" autocomplete="off" enctype="multipart/form-data">
+  <form class="addAssignment" action="<?php echo BASE_URL; ?>/admin/add.php" method="post" autocomplete="off" enctype="multipart/form-data">
     <label for="title">
       <p>Title</p>
       <input type="text" name="title" id="title">
@@ -18,14 +20,14 @@
     <label for="vak">
       <p>Vak</p>
 
-    <input type="radio" name="vak" id="vak" value="uxu">uxu</input>
-    <input type="radio" name="vak" id="vak" value="ded">ded</input>
-    <input type="radio" name="vak" id="vak" value="sco">sco</input>
-    <input type="radio" name="vak" id="vak" value="pt">pt</input>
-    <input type="radio" name="vak" id="vak" value="me">me</input>
+      <input type="radio" name="vak" id="vak" value="uxu">uxu</input>
+      <input type="radio" name="vak" id="vak" value="ded">ded</input>
+      <input type="radio" name="vak" id="vak" value="sco">sco</input>
+      <input type="radio" name="vak" id="vak" value="pt">pt</input>
+      <input type="radio" name="vak" id="vak" value="me">me</input>
     </label>
 
-    <input type="submit" value="Add Assignment">
+    <input type="submit" name="upload" value="Add Assignment">
   </form>
 
 <?php require VIEW_ROOT . '/templates/footer.php'; ?>

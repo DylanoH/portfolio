@@ -100,11 +100,6 @@ table th {
   justify-content: center;
   align-items: center;
 
-  // #particles-js {
-  //
-  //
-  // }
-
   .uxu {
     @include course-style();
 
@@ -149,23 +144,7 @@ table th {
     }
   }
 
-  // &:nth-child(1){
-  //   border-top: 0px;
-  //   border-left: 0px;
-  //   background-color: green;
-  // }
-  // &:nth-child(2){
-  //   border-top: 0px;
-  //   border-right: 0px;
-  // }
-  // &:nth-child(3){
-  //   border-bottom: 0px;
-  //   border-left: 0px;
-  // }
-  // &:nth-child(4){
-  //   border-bottom: 0px;
-  //   border-left: 0px;
-  // }
+
 
   .course {
     text-transform: uppercase;
@@ -206,5 +185,4 @@ table th {
       }
     }
   }
-
 }
