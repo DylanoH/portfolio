@@ -3,19 +3,19 @@ $loginbutton-background-color: #f2f2f2;
 $loginbutton-background-color-hover: #bdbdbd;
 
 @mixin textDecorationNone() {
-  a:link {
+  &:link {
     text-decoration: none;
   }
 
-  a:visited {
+  &:visited {
       text-decoration: none;
   }
 
-  a:hover {
+  &:hover {
       text-decoration: none;
   }
 
-  a:active {
+  &:active {
       text-decoration: none;
   }
 }
@@ -60,7 +60,7 @@ $loginbutton-background-color-hover: #bdbdbd;
 html, body {
   width: 100%;
   height: 100%;
-
+  color: black;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -171,16 +171,15 @@ label {
   font-size: 18px;
   border-radius: 50px;
   background-color: $loginbutton-background-color;
+  color: black;
   text-align: center;
   position: fixed;
   bottom: 2vw;
   right: 2vw;
-
-      @include textDecorationNone();
+  @include textDecorationNone();
 
   &:hover {
     background-color: $loginbutton-background-color-hover;
-
 
   }
 }
