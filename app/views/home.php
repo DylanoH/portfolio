@@ -18,4 +18,8 @@
     </div>
   <?php  endif; ?>
 
+  <div class="login-button">
+    <a href="#" class="">login</a>
+  </div>
+
 <?php require VIEW_ROOT . '/templates/footer.php'; ?>

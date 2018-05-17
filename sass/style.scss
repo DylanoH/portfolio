@@ -1,5 +1,24 @@
 $course-background-color: #2d2d2d;
+$loginbutton-background-color: #f2f2f2;
+$loginbutton-background-color-hover: #bdbdbd;
 
+@mixin textDecorationNone() {
+  a:link {
+    text-decoration: none;
+  }
+
+  a:visited {
+      text-decoration: none;
+  }
+
+  a:hover {
+      text-decoration: none;
+  }
+
+  a:active {
+      text-decoration: none;
+  }
+}
 @mixin course-style() {
   width: 50vw;
   height: 50vh;
@@ -77,16 +96,6 @@ label {
 
 }
 
-table {
-  width: 100%;
-  table-layout: fixed;
-  margin-bottom: 20px;
-}
-
-table th {
-  text-align: left;
-}
-
 .faded {
   color: #bbb;
 }
@@ -152,9 +161,31 @@ table th {
     text-decoration: none;
 
   }
+
+
 }
 
-// end course nest
+.login-button {
+  width: 100px;
+  height: 30px;
+  font-size: 18px;
+  border-radius: 50px;
+  background-color: $loginbutton-background-color;
+  text-align: center;
+  position: fixed;
+  bottom: 2vw;
+  right: 2vw;
+
+      @include textDecorationNone();
+
+  &:hover {
+    background-color: $loginbutton-background-color-hover;
+
+
+  }
+}
+
+// end courses nest
 
 
 
