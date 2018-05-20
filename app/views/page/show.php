@@ -8,17 +8,14 @@
 
 
     <?php foreach ($content as $assignment): ?>
-      <h2><?php echo e($assignment['title']); ?></h2>
+      <div class="assignment">
+        <h2><?php echo e($assignment['title']); ?></h2>
+        <p><?php echo e($assignment['content']); ?></p>
+        <img src="resources/uploads/<?php echo e($assignment['image']); ?>" alt="">
+        <a href="resources/uploads/<?php echo e($assignment['assignment']); ?>"><img src="resources/uploads/pdf.png" alt=""></a>
+      </div>
 
-
-
-      <p>
-        <?php echo e($assignment['content']); ?>
-      </p>
-      <img src="resources/uploads/<?php echo e($assignment['image']); ?>" alt="">
     <?php endforeach; ?>
-
-
 
 
 <?php endif; ?>

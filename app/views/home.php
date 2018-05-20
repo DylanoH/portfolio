@@ -19,7 +19,7 @@
   <?php  endif; ?>
 
 
-  <a href="#" class="login-button">login</a>
+  <a href="<?php echo BASE_URL ?>/app/login.php" class="login-button">login</a>
 
 
 <?php require VIEW_ROOT . '/templates/footer.php'; ?>
