@@ -1,27 +1,4 @@
-/* line 61, ../sass/style.scss */
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-/* line 65, ../sass/style.scss */
-html, body {
-  width: 100%;
-  height: 100%;
-  color: black;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* line 75, ../sass/style.scss */
-main {
-  margin: 0 auto;
-  padding: 0px;
-  width: 100%;
-  background-color: #fff;
-}
-
-/* line 82, ../sass/style.scss */
+/* line 1, ../sass/_login.scss */
 .login {
   padding: 0;
   height: 100%;
@@ -30,7 +7,7 @@ main {
   justify-content: center;
   align-items: center;
 }
-/* line 91, ../sass/style.scss */
+/* line 10, ../sass/_login.scss */
 .login .formLogin {
   width: 35vw;
   height: 30vh;
@@ -42,14 +19,14 @@ main {
   align-items: center;
   background-color: #f2f2f2;
 }
-/* line 105, ../sass/style.scss */
+/* line 24, ../sass/_login.scss */
 .login .formLogin input[type="text"], .login .formLogin input[type="password"] {
-  width: 18vw;
+  width: 22vw;
   height: 50px;
   padding-left: 7px;
   margin-bottom: 10px;
 }
-/* line 113, ../sass/style.scss */
+/* line 32, ../sass/_login.scss */
 .login .formLogin #submitLogin {
   border-radius: 16px;
   border: 0px;
@@ -58,41 +35,12 @@ main {
   color: white;
   background-color: #171717;
 }
-/* line 122, ../sass/style.scss */
+/* line 41, ../sass/_login.scss */
 .login .formLogin #submitLogin:hover {
   background-color: #444343;
 }
 
-/* line 129, ../sass/style.scss */
-h1, h2, h3, h4, h5 {
-  font-weight: 200;
-}
-
-/* line 133, ../sass/style.scss */
-input, textarea {
-  font-size: inherit;
-}
-
-/* line 137, ../sass/style.scss */
-input[type="text"], textarea {
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-  border: 1px solid #bbb;
-}
-
-/* line 144, ../sass/style.scss */
-label {
-  display: block;
-  margin-bottom: 20px;
-}
-
-/* line 150, ../sass/style.scss */
-.faded {
-  color: #bbb;
-}
-
-/* line 154, ../sass/style.scss */
+/* line 1, ../sass/_home.scss */
 .courses {
   width: 100vw;
   height: 100vh;
@@ -102,7 +50,7 @@ label {
   justify-content: center;
   align-items: center;
 }
-/* line 163, ../sass/style.scss */
+/* line 10, ../sass/_home.scss */
 .courses .uxu {
   width: 50vw;
   height: 50vh;
@@ -114,27 +62,27 @@ label {
   align-items: center;
   border: 2px solid white;
 }
-/* line 39, ../sass/style.scss */
+/* line 34, ../sass/_mixins.scss */
 .courses .uxu:link {
   text-decoration: none;
   color: white;
 }
-/* line 43, ../sass/style.scss */
+/* line 38, ../sass/_mixins.scss */
 .courses .uxu:visited {
   text-decoration: none;
   color: white;
 }
-/* line 49, ../sass/style.scss */
+/* line 44, ../sass/_mixins.scss */
 .courses .uxu:hover {
   text-decoration: none;
   color: #b4b4b4;
 }
-/* line 54, ../sass/style.scss */
+/* line 49, ../sass/_mixins.scss */
 .courses .uxu:active {
   text-decoration: none;
   color: white;
 }
-/* line 168, ../sass/style.scss */
+/* line 15, ../sass/_home.scss */
 .courses .ded {
   width: 50vw;
   height: 50vh;
@@ -146,34 +94,34 @@ label {
   align-items: center;
   border: 2px solid white;
 }
-/* line 39, ../sass/style.scss */
+/* line 34, ../sass/_mixins.scss */
 .courses .ded:link {
   text-decoration: none;
   color: white;
 }
-/* line 43, ../sass/style.scss */
+/* line 38, ../sass/_mixins.scss */
 .courses .ded:visited {
   text-decoration: none;
   color: white;
 }
-/* line 49, ../sass/style.scss */
+/* line 44, ../sass/_mixins.scss */
 .courses .ded:hover {
   text-decoration: none;
   color: #b4b4b4;
 }
-/* line 54, ../sass/style.scss */
+/* line 49, ../sass/_mixins.scss */
 .courses .ded:active {
   text-decoration: none;
   color: white;
 }
-/* line 172, ../sass/style.scss */
+/* line 19, ../sass/_home.scss */
 .courses .ded:hover {
   background-color: #2d2d2d;
   background-image: url("../resources/coding-bg.jpg");
   background-size: cover;
   color: white;
 }
-/* line 181, ../sass/style.scss */
+/* line 28, ../sass/_home.scss */
 .courses .sco {
   width: 50vw;
   height: 50vh;
@@ -185,27 +133,27 @@ label {
   align-items: center;
   border: 2px solid white;
 }
-/* line 39, ../sass/style.scss */
+/* line 34, ../sass/_mixins.scss */
 .courses .sco:link {
   text-decoration: none;
   color: white;
 }
-/* line 43, ../sass/style.scss */
+/* line 38, ../sass/_mixins.scss */
 .courses .sco:visited {
   text-decoration: none;
   color: white;
 }
-/* line 49, ../sass/style.scss */
+/* line 44, ../sass/_mixins.scss */
 .courses .sco:hover {
   text-decoration: none;
   color: #b4b4b4;
 }
-/* line 54, ../sass/style.scss */
+/* line 49, ../sass/_mixins.scss */
 .courses .sco:active {
   text-decoration: none;
   color: white;
 }
-/* line 185, ../sass/style.scss */
+/* line 32, ../sass/_home.scss */
 .courses .pt {
   width: 50vw;
   height: 50vh;
@@ -217,27 +165,27 @@ label {
   align-items: center;
   border: 2px solid white;
 }
-/* line 39, ../sass/style.scss */
+/* line 34, ../sass/_mixins.scss */
 .courses .pt:link {
   text-decoration: none;
   color: white;
 }
-/* line 43, ../sass/style.scss */
+/* line 38, ../sass/_mixins.scss */
 .courses .pt:visited {
   text-decoration: none;
   color: white;
 }
-/* line 49, ../sass/style.scss */
+/* line 44, ../sass/_mixins.scss */
 .courses .pt:hover {
   text-decoration: none;
   color: #b4b4b4;
 }
-/* line 54, ../sass/style.scss */
+/* line 49, ../sass/_mixins.scss */
 .courses .pt:active {
   text-decoration: none;
   color: white;
 }
-/* line 189, ../sass/style.scss */
+/* line 36, ../sass/_home.scss */
 .courses .me {
   position: absolute;
   width: 400px;
@@ -250,19 +198,19 @@ label {
   color: black;
   font-size: 90px;
 }
-/* line 201, ../sass/style.scss */
+/* line 48, ../sass/_home.scss */
 .courses .me:hover {
   text-decoration: none;
   color: dimgray;
 }
-/* line 209, ../sass/style.scss */
+/* line 54, ../sass/_home.scss */
 .courses .course {
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
 }
 
-/* line 219, ../sass/style.scss */
+/* line 61, ../sass/_home.scss */
 .login-button {
   width: 100px;
   height: 30px;
@@ -275,58 +223,110 @@ label {
   bottom: 2vw;
   right: 2vw;
 }
-/* line 11, ../sass/style.scss */
+/* line 6, ../sass/_mixins.scss */
 .login-button:link {
   text-decoration: none;
 }
-/* line 15, ../sass/style.scss */
+/* line 10, ../sass/_mixins.scss */
 .login-button:visited {
   text-decoration: none;
 }
-/* line 19, ../sass/style.scss */
+/* line 14, ../sass/_mixins.scss */
 .login-button:hover {
   text-decoration: none;
 }
-/* line 23, ../sass/style.scss */
+/* line 18, ../sass/_mixins.scss */
 .login-button:active {
   text-decoration: none;
 }
-/* line 232, ../sass/style.scss */
+/* line 74, ../sass/_home.scss */
 .login-button:hover {
   background-color: #bdbdbd;
 }
 
-/* line 242, ../sass/style.scss */
+/* line 7, ../sass/style.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 11, ../sass/style.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+  color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 21, ../sass/style.scss */
+main {
+  margin: 0 auto;
+  padding: 0px;
+  width: 100%;
+  background-color: #fff;
+}
+
+/* line 28, ../sass/style.scss */
+h1, h2, h3, h4, h5 {
+  font-weight: 200;
+}
+
+/* line 32, ../sass/style.scss */
+input, textarea {
+  font-size: inherit;
+}
+
+/* line 36, ../sass/style.scss */
+input[type="text"], textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #bbb;
+}
+
+/* line 43, ../sass/style.scss */
+label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* line 49, ../sass/style.scss */
+.faded {
+  color: #bbb;
+}
+
+/* line 54, ../sass/style.scss */
 .overview {
   display: flex;
   justify-content: space-around;
 }
-/* line 247, ../sass/style.scss */
+/* line 59, ../sass/style.scss */
 .overview .list-wrapper {
   max-width: 20vw;
 }
-/* line 250, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 .overview .list-wrapper .list-headers {
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 254, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 .overview .list-wrapper .list-headers a {
   color: black;
 }
-/* line 259, ../sass/style.scss */
+/* line 71, ../sass/style.scss */
 .overview .list-wrapper .list {
   list-style-type: none;
   padding: 0px 0px 0px 15px;
   margin: 0px;
 }
-/* line 264, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 .overview .list-wrapper .list a {
   color: black;
 }
 
-/* line 271, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 .assignment {
   background-color: pink;
 }

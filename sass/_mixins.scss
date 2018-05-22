@@ -1,0 +1,54 @@
+@mixin button() {
+
+}
+
+@mixin textDecorationNone() {
+  &:link {
+    text-decoration: none;
+  }
+
+  &:visited {
+      text-decoration: none;
+  }
+
+  &:hover {
+      text-decoration: none;
+  }
+
+  &:active {
+      text-decoration: none;
+  }
+}
+@mixin course-style() {
+  width: 50vw;
+  height: 50vh;
+  background-color: $course-background-color;
+  color: white;
+  font-size: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid white;
+
+  &:link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  &:visited {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: rgb(180, 180, 180);
+  }
+
+  &:active {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+
+}

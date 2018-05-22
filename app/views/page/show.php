@@ -12,7 +12,7 @@
         <h2><?php echo e($assignment['title']); ?></h2>
         <p><?php echo e($assignment['content']); ?></p>
         <img src="resources/uploads/<?php echo e($assignment['image']); ?>" alt="">
-        <a href="resources/uploads/<?php echo e($assignment['assignment']); ?>"><img src="resources/uploads/pdf.png" alt=""></a>
+        <a href="resources/uploads/<?php echo e($assignment['assignment']); ?>" target="_blank"><img src="resources/uploads/pdf.png" alt=""></a>
       </div>
 
     <?php endforeach; ?>

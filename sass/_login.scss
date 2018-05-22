@@ -1,0 +1,46 @@
+.login {
+  padding: 0;
+  height: 100%;
+  background: $login-background-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  .formLogin {
+    width: 35vw;
+    height: 30vh;
+    border-radius: 15px;
+    box-shadow: 1px 5px 15px rgb(93, 93, 93);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: $white;
+
+
+    input[type="text"], input[type="password"] {
+      width: 22vw;
+      height: 50px;
+      padding-left: 7px;
+      margin-bottom: 10px;
+
+    }
+
+    #submitLogin {
+      border-radius: 16px;
+      border: 0px;
+      width: 120px;
+      height: 45px;
+      color: white;
+      background-color: $black;
+
+
+      &:hover {
+        background-color: $black-hover;
+      }
+    }
+  }
+}

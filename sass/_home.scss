@@ -1,0 +1,78 @@
+.courses {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  .uxu {
+    @include course-style();
+
+  }
+
+  .ded {
+    @include course-style();
+
+
+    &:hover {
+      background-color: $course-background-color;
+      background-image: url("../resources/coding-bg.jpg");
+      background-size: cover;
+      color: white;
+
+    }
+  }
+
+  .sco {
+    @include course-style();
+  }
+
+  .pt {
+    @include course-style();
+  }
+
+  .me {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 90px;
+
+    &:hover {
+      text-decoration: none;
+      color: rgb(105, 105, 105);
+    }
+  }
+
+  .course {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+
+.login-button {
+  width: 100px;
+  height: 30px;
+  font-size: 18px;
+  border-radius: 50px;
+  background-color: $loginbutton-background-color;
+  color: black;
+  text-align: center;
+  position: fixed;
+  bottom: 2vw;
+  right: 2vw;
+  @include textDecorationNone();
+
+  &:hover {
+    background-color: $loginbutton-background-color-hover;
+
+  }
+}

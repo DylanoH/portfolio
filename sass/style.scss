@@ -1,62 +1,8 @@
-// colors
-$black: #171717;
-$white: #f2f2f2;
-// background colors
-$course-background-color: #2d2d2d;
-$loginbutton-background-color: #f2f2f2;
-$loginbutton-background-color-hover: #bdbdbd;
-$login-background-color: linear-gradient(to bottom right, #7a7a7a, #cdcdcd);
-
-@mixin textDecorationNone() {
-  &:link {
-    text-decoration: none;
-  }
-
-  &:visited {
-      text-decoration: none;
-  }
-
-  &:hover {
-      text-decoration: none;
-  }
-
-  &:active {
-      text-decoration: none;
-  }
-}
-@mixin course-style() {
-  width: 50vw;
-  height: 50vh;
-  background-color: $course-background-color;
-  color: white;
-  font-size: 90px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  border: 2px solid white;
-
-  &:link {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-  }
-  &:visited {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-
-  }
-
-  &:hover {
-    text-decoration: none;
-    color: rgb(180, 180, 180);
-  }
-
-  &:active {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-  }
-
-}
+// imports
+@import 'variables';
+@import 'mixins';
+@import 'login';
+@import 'home';
 
 *, *:before, *:after {
   box-sizing: inherit;
@@ -77,53 +23,6 @@ main {
   padding: 0px;
   width: 100%;
   background-color: #fff;
-}
-
-.login {
-  padding: 0;
-  height: 100%;
-  background: $login-background-color;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-
-  .formLogin {
-    width: 35vw;
-    height: 30vh;
-    border-radius: 15px;
-    box-shadow: 1px 5px 15px rgb(93, 93, 93);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-
-    background-color: $white;
-
-
-    input[type="text"], input[type="password"] {
-      width: 18vw;
-      height: 50px;
-      padding-left: 7px;
-      margin-bottom: 10px;
-
-    }
-
-    #submitLogin {
-      border-radius: 16px;
-      border: 0px;
-      width: 120px;
-      height: 45px;
-      color: white;
-      background-color: $black;
-
-
-      &:hover {
-        background-color: #444343;
-      }
-    }
-  }
 }
 
 h1, h2, h3, h4, h5 {
@@ -150,93 +49,6 @@ label {
 .faded {
   color: #bbb;
 }
-
-.courses {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-
-  .uxu {
-    @include course-style();
-
-  }
-
-  .ded {
-    @include course-style();
-
-
-    &:hover {
-      background-color: $course-background-color;
-      background-image: url("../resources/coding-bg.jpg");
-      background-size: cover;
-      color: white;
-
-    }
-  }
-
-  .sco {
-    @include course-style();
-  }
-
-  .pt {
-    @include course-style();
-  }
-
-  .me {
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    font-size: 90px;
-
-    &:hover {
-      text-decoration: none;
-      color: rgb(105, 105, 105);
-    }
-  }
-
-
-
-  .course {
-    text-transform: uppercase;
-    font-weight: bold;
-    text-decoration: none;
-
-  }
-
-
-}
-
-.login-button {
-  width: 100px;
-  height: 30px;
-  font-size: 18px;
-  border-radius: 50px;
-  background-color: $loginbutton-background-color;
-  color: black;
-  text-align: center;
-  position: fixed;
-  bottom: 2vw;
-  right: 2vw;
-  @include textDecorationNone();
-
-  &:hover {
-    background-color: $loginbutton-background-color-hover;
-
-  }
-}
-
-// end courses nest
-
 
 
 .overview {
