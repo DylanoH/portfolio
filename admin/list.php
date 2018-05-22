@@ -27,22 +27,6 @@
 
   $vakken = $con->query($query)->fetchAll(PDO::FETCH_ASSOC);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   require VIEW_ROOT . '/admin/list.php'
 
  ?>

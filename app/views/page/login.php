@@ -1,4 +1,3 @@
-<?php require 'start.php'; ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -24,6 +23,7 @@
         <label for="password">
           <input type="password" id="password" name="password" placeholder="password"  required>
         </label>
+        <?php echo $error; ?>
           <input type="submit" id="submitLogin" name="submitLogin" value="Login">
         </form>
     </main>

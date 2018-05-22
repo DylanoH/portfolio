@@ -10,7 +10,7 @@
 /* line 10, ../sass/_login.scss */
 .login .formLogin {
   width: 35vw;
-  height: 30vh;
+  height: 32vh;
   border-radius: 15px;
   box-shadow: 1px 5px 15px #5d5d5d;
   display: flex;
@@ -35,7 +35,7 @@
   color: white;
   background-color: #171717;
 }
-/* line 41, ../sass/_login.scss */
+/* line 42, ../sass/_login.scss */
 .login .formLogin #submitLogin:hover {
   background-color: #444343;
 }
