@@ -2,7 +2,7 @@
   require '../app/start.php';
   session_start();
   $error = "";
-  
+
   if($_SERVER["REQUEST_METHOD"] == "POST") {
      // username and password sent from form
 
@@ -22,11 +22,13 @@
        'password' => $password
      ]);
 
+     $row = $loginAttempt->fetch(PDO::FETCH_ASSOC);
+
      $result = $loginAttempt->rowCount() ? true : false;
 
      if($result === true) {
-        $_SESSION['login_user'] = $username;
-        header('location: ' . BASE_URL . '/admin/list.php');
+        $_SESSION['user'] = $username;
+        header('Location: ' . BASE_URL . '/app/views/page/welcome.php');
 
      }
      elseif($result === false) {

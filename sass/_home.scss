@@ -76,3 +76,21 @@
 
   }
 }
+.logout-button {
+  width: 100px;
+  height: 30px;
+  font-size: 18px;
+  border-radius: 50px;
+  background-color: $loginbutton-background-color;
+  color: black;
+  text-align: center;
+  position: fixed;
+  bottom: 2vw;
+  right: 10vw;
+  @include textDecorationNone();
+
+  &:hover {
+    background-color: $loginbutton-background-color-hover;
+
+  }
+}

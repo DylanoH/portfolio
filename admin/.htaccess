@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Restricted Area"
-AuthUserFile D:\wamp64\www\portfolio\admin\.htpasswd
-require valid-user

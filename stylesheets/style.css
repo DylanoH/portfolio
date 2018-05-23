@@ -244,6 +244,40 @@
   background-color: #bdbdbd;
 }
 
+/* line 79, ../sass/_home.scss */
+.logout-button {
+  width: 100px;
+  height: 30px;
+  font-size: 18px;
+  border-radius: 50px;
+  background-color: #f2f2f2;
+  color: black;
+  text-align: center;
+  position: fixed;
+  bottom: 2vw;
+  right: 10vw;
+}
+/* line 6, ../sass/_mixins.scss */
+.logout-button:link {
+  text-decoration: none;
+}
+/* line 10, ../sass/_mixins.scss */
+.logout-button:visited {
+  text-decoration: none;
+}
+/* line 14, ../sass/_mixins.scss */
+.logout-button:hover {
+  text-decoration: none;
+}
+/* line 18, ../sass/_mixins.scss */
+.logout-button:active {
+  text-decoration: none;
+}
+/* line 92, ../sass/_home.scss */
+.logout-button:hover {
+  background-color: #bdbdbd;
+}
+
 /* line 7, ../sass/style.scss */
 *, *:before, *:after {
   box-sizing: inherit;
