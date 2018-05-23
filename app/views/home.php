@@ -20,7 +20,7 @@
 
 
   <a href="<?php echo BASE_URL ?>/admin/login.php" class="login-button">login</a>
-  <a href="<?php echo BASE_URL ?>/app/views/admin/logout.php" class="logout-button">logout</a>
+  <a href="<?php echo BASE_URL ?>/admin/logout.php" class="logout-button">logout</a>
 
 
 <?php require VIEW_ROOT . '/templates/footer.php'; ?>

@@ -15,11 +15,11 @@
     </label>
     <label for="image">
       <p>Image</p>
-    <input type="file" name="image" id="image">
+      <input type="file" name="image" id="image">
     </label>
     <label for="assignmentfile">
       <p>File</p>
-    <input type="file" name="assignmentfile" id="assignmentfile">
+      <input type="file" name="assignmentfile" id="assignmentfile">
     </label>
     <label for="vak">
       <p>Vak</p>

@@ -28,7 +28,7 @@
 
      if($result === true) {
         $_SESSION['user'] = $username;
-        header('Location: ' . BASE_URL . '/app/views/page/welcome.php');
+        header('Location: ' . BASE_URL . '/admin/list.php');
 
      }
      elseif($result === false) {

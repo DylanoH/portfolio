@@ -3,16 +3,20 @@
 
   <form class="editAssignment" action="<?php echo BASE_URL; ?>/admin/edit.php" method="post" autocomplete="off" enctype="multipart/form-data">
     <label for="title">
-      Title
+      <p>Title</p>
       <input type="text" name="title" id="title" value="<?php echo e($assignment['title']); ?>">
     </label>
     <label for="content">
-      Content
-      <textarea name="body" id="content" rows="10" cols="30"><?php  echo e($assignment['content']); ?></textarea>
+      <p>Content</p>
+      <textarea name="content" id="content" rows="10" cols="30"><?php  echo e($assignment['content']); ?></textarea>
     </label>
     <label for="image">
-      Image
+      <p>Image</p>
       <input type="file" name="image" id="image">
+    </label>
+    <label for="assignmentfile">
+      <p>File</p>
+      <input type="file" name="assignmentfile" id="assignmentfile">
     </label>
     <label for="vak">
       <p>Vak</p>
@@ -22,30 +26,26 @@
         echo 'checked = "checked"';
       }
       ?>>uxu</input>
-      <input type="radio" name="vak" id="vak" value="uxu" <?php
+      <input type="radio" name="vak" id="vak" value="ded" <?php
       if (e($assignment['vak']) == $ded ) {
         echo 'checked = "checked"';
       }
       ?>>ded</input>
-      <input type="radio" name="vak" id="vak" value="uxu" <?php
+      <input type="radio" name="vak" id="vak" value="sco" <?php
       if (e($assignment['vak']) == $sco ) {
         echo 'checked = "checked"';
       }
       ?>>sco</input>
-      <input type="radio" name="vak" id="vak" value="uxu" <?php
+      <input type="radio" name="vak" id="vak" value="pt" <?php
       if (e($assignment['vak']) == $pt ) {
         echo 'checked = "checked"';
       }
       ?>>pt</input>
-      <input type="radio" name="vak" id="vak" value="uxu" <?php
+      <input type="radio" name="vak" id="vak" value="me" <?php
       if (e($assignment['vak']) == $me ) {
         echo 'checked = "checked"';
       }
       ?>>me</input>
-
-
-
-
     </label>
 
 

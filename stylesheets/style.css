@@ -38,6 +38,7 @@
 /* line 42, ../sass/_login.scss */
 .login .formLogin #submitLogin:hover {
   background-color: #444343;
+  cursor: pointer;
 }
 
 /* line 1, ../sass/_home.scss */
@@ -362,5 +363,5 @@ label {
 
 /* line 83, ../sass/style.scss */
 .assignment {
-  background-color: pink;
+  background-color: #f2f2f2;
 }
