@@ -3,13 +3,12 @@ header {
   /* The side navigation menu */
   /* The navigation menu links */
   /* When you mouse over the navigation links, change their color */
-  /* Position and style the close button (top right corner) */
 }
 /* line 3, ../sass/_nav.scss */
 header .sidenav {
-  height: 100%;
+  height: 0;
   /* 100% Full-height */
-  width: 0;
+  width: 100vw;
   /* 0 width - change this with JavaScript */
   position: fixed;
   /* Stay in place */
@@ -30,7 +29,7 @@ header .sidenav {
 }
 /* line 20, ../sass/_nav.scss */
 header .widthChange .sidenav {
-  width: 100%;
+  height: 100%;
 }
 /* line 25, ../sass/_nav.scss */
 header .sidenav a {
@@ -43,17 +42,9 @@ header .sidenav a {
 }
 /* line 35, ../sass/_nav.scss */
 header .sidenav a:hover {
-  color: #f1f1f1;
+  color: #40E0D0;
 }
-/* line 40, ../sass/_nav.scss */
-header .sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-/* line 48, ../sass/_nav.scss */
+/* line 39, ../sass/_nav.scss */
 header .hamburger-container {
   position: fixed;
   top: 10px;
@@ -62,7 +53,7 @@ header .hamburger-container {
   cursor: pointer;
   z-index: 3;
 }
-/* line 57, ../sass/_nav.scss */
+/* line 48, ../sass/_nav.scss */
 header .hamburger-container .hamburger1, header .hamburger-container .hamburger2, header .hamburger-container .hamburger3 {
   width: 35px;
   height: 5px;
@@ -70,16 +61,16 @@ header .hamburger-container .hamburger1, header .hamburger-container .hamburger2
   margin: 6px 0;
   transition: 0.4s;
 }
-/* line 66, ../sass/_nav.scss */
+/* line 57, ../sass/_nav.scss */
 header .change .hamburger1 {
   transform: rotate(-45deg) translate(-9px, 6px);
   background-color: #171717;
 }
-/* line 70, ../sass/_nav.scss */
+/* line 61, ../sass/_nav.scss */
 header .change .hamburger2 {
   opacity: 0;
 }
-/* line 73, ../sass/_nav.scss */
+/* line 64, ../sass/_nav.scss */
 header .change .hamburger3 {
   transform: rotate(45deg) translate(-8px, -8px);
   background-color: #171717;

@@ -1,3 +1,15 @@
+<?php
+
+require '../../start.php';
+
+$pages = $con->query("
+  SELECT id, label, slug
+  FROM pages
+  ORDER BY id
+")->fetchAll(PDO::FETCH_ASSOC);
+
+ ?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -14,12 +26,19 @@
 
   <body>
     <header>
-      <div class="sidenav">
-        <a href="#">test</a>
-        <a href="#">test</a>
-        <a href="#">test</a>
-        <a href="#">test</a>
-      </div>
+      <nav>
+        <div class="nav">
+          <div class="sidenav">
+            <?php foreach($pages as $page): ?>
+              <a href="<?php echo BASE_URL;?>/page.php?page=<?php echo $page['slug'];?>">
+                <?php echo $page['label']; ?>
+              </a>
+            <?php endforeach; ?>
+          </div>
+        </div>
+      </nav>
+
+
 
       <div class="hamburger-container">
         <div class="hamburger1"></div>

@@ -1,8 +1,8 @@
 header {
   /* The side navigation menu */
-.sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
+  .sidenav {
+    height: 0; /* 100% Full-height */
+    width: 100vw; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 2; /* Stay on top */
     top: 0; /* Stay at the top */
@@ -15,35 +15,26 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.widthChange .sidenav  {
-  width: 100%;
-}
+  .widthChange .sidenav {
+    height: 100%;
+  }
 
-/* The navigation menu links */
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
+  /* The navigation menu links */
+  .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+  }
 
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+      color: $turquose;
+  }
 
   .hamburger-container {
     position: fixed;

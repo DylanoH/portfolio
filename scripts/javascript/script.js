@@ -1,19 +1,14 @@
 $(document).ready(function(){
 
   // nav //
-
-
-
   $('.hamburger-container').on('click', function() {
-    this.classList.toggle('change');
-    var toggleWidth = $('.sidenav').width() > 800 ? "0px" : "100%";
-    $('.sidenav').animate({ width: toggleWidth });
+
+    $(this).toggleClass('change');
+    $('.nav').toggleClass('widthChange');
+
   });
 
-/* Close/hide the sidenav */
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
+
 
   $(".courses").children().eq(0).css({"border-top": "0", "border-left": "0"});
   $(".courses").children().eq(1).css({"border-top": "0", "border-right": "0"});
