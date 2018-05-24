@@ -1,3 +1,84 @@
+/* line 1, ../sass/_nav.scss */
+header {
+  /* The side navigation menu */
+  /* The navigation menu links */
+  /* When you mouse over the navigation links, change their color */
+  /* Position and style the close button (top right corner) */
+}
+/* line 3, ../sass/_nav.scss */
+header .sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 2;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background-color: #f2f2f2;
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+}
+/* line 17, ../sass/_nav.scss */
+header .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+/* line 27, ../sass/_nav.scss */
+header .sidenav a:hover {
+  color: #f1f1f1;
+}
+/* line 32, ../sass/_nav.scss */
+header .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/* line 40, ../sass/_nav.scss */
+header .hamburger-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: inline-block;
+  cursor: pointer;
+  z-index: 3;
+}
+/* line 49, ../sass/_nav.scss */
+header .hamburger-container .hamburger1, header .hamburger-container .hamburger2, header .hamburger-container .hamburger3 {
+  width: 35px;
+  height: 5px;
+  background-color: #f2f2f2;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+/* line 58, ../sass/_nav.scss */
+header .change .hamburger1 {
+  transform: rotate(-45deg) translate(-9px, 6px);
+  background-color: #171717;
+}
+/* line 62, ../sass/_nav.scss */
+header .change .hamburger2 {
+  opacity: 0;
+}
+/* line 65, ../sass/_nav.scss */
+header .change .hamburger3 {
+  transform: rotate(45deg) translate(-8px, -8px);
+  background-color: #171717;
+}
+
 /* line 1, ../sass/_login.scss */
 .login {
   padding: 0;
@@ -12,7 +93,7 @@
   width: 35vw;
   height: 32vh;
   border-radius: 15px;
-  box-shadow: 1px 5px 15px #5d5d5d;
+  box-shadow: 1px 2px 15px #5d5d5d;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -279,12 +360,12 @@
   background-color: #bdbdbd;
 }
 
-/* line 7, ../sass/style.scss */
+/* line 8, ../sass/style.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/* line 11, ../sass/style.scss */
+/* line 12, ../sass/style.scss */
 html, body {
   width: 100%;
   height: 100%;
@@ -294,7 +375,7 @@ html, body {
   box-sizing: border-box;
 }
 
-/* line 21, ../sass/style.scss */
+/* line 22, ../sass/style.scss */
 main {
   margin: 0 auto;
   padding: 0px;
@@ -302,17 +383,17 @@ main {
   background-color: #fff;
 }
 
-/* line 28, ../sass/style.scss */
+/* line 29, ../sass/style.scss */
 h1, h2, h3, h4, h5 {
   font-weight: 200;
 }
 
-/* line 32, ../sass/style.scss */
+/* line 33, ../sass/style.scss */
 input, textarea {
   font-size: inherit;
 }
 
-/* line 36, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 input[type="text"], textarea {
   width: 100%;
   padding: 10px;
@@ -320,48 +401,48 @@ input[type="text"], textarea {
   border: 1px solid #bbb;
 }
 
-/* line 43, ../sass/style.scss */
+/* line 44, ../sass/style.scss */
 label {
   display: block;
   margin-bottom: 20px;
 }
 
-/* line 49, ../sass/style.scss */
+/* line 50, ../sass/style.scss */
 .faded {
   color: #bbb;
 }
 
-/* line 54, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 .overview {
   display: flex;
   justify-content: space-around;
 }
-/* line 59, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 .overview .list-wrapper {
   max-width: 20vw;
 }
-/* line 62, ../sass/style.scss */
+/* line 63, ../sass/style.scss */
 .overview .list-wrapper .list-headers {
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 66, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 .overview .list-wrapper .list-headers a {
   color: black;
 }
-/* line 71, ../sass/style.scss */
+/* line 72, ../sass/style.scss */
 .overview .list-wrapper .list {
   list-style-type: none;
   padding: 0px 0px 0px 15px;
   margin: 0px;
 }
-/* line 76, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 .overview .list-wrapper .list a {
   color: black;
 }
 
-/* line 83, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 .assignment {
   background-color: #f2f2f2;
 }

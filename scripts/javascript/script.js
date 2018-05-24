@@ -1,5 +1,24 @@
 $(document).ready(function(){
 
+  // nav //
+
+
+
+  $('.hamburger-container').on('click', function() {
+    this.classList.toggle('change');
+    document.getElementById("mySidenav").style.width = "100%";
+  });
+
+  /* Open the sidenav */
+function openNav() {
+
+}
+
+/* Close/hide the sidenav */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
   $(".courses").children().eq(0).css({"border-top": "0", "border-left": "0"});
   $(".courses").children().eq(1).css({"border-top": "0", "border-right": "0"});
   $(".courses").children().eq(2).css({"border-bottom": "0", "border-left": "0"});
@@ -42,5 +61,10 @@ $(document).ready(function(){
           }
       });
   });
+
+
+
+
+
 
 });

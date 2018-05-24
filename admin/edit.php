@@ -25,6 +25,15 @@
         $documentFileType = strtolower(pathinfo($target_file_document, PATHINFO_EXTENSION)); // file extensie .png bijvoorbeeld
         $extensions_array = array("jpg", "jpeg", "png", "gif"); // extensies die jij ok vindt
 
+        /////////// ATTEMPT TO CHECK IF THERE IS AN IMAGE ALREADY /////////////
+        // if (isset($assignment['image']) && isset($assignment['assignment'])) {
+        //
+        // }
+        // else {
+        //
+        // }
+
+
         if ((in_array($imageFileType, $extensions_array)) && ($documentFileType == "pdf")) {
 
             $updateAssignment = $con->prepare("
@@ -69,7 +78,7 @@
         }
         else {
             echo("Er ging iets mis!");
-        }
+        } // end of if in_array
       }
     }
     else {
@@ -78,7 +87,7 @@
         die();
       }
       $assignment = $con->prepare("
-        SELECT id, title, content, image, vak
+        SELECT id, title, content, image, vak, assignment
         FROM course
         WHERE id = :id
       ");

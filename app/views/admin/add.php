@@ -7,19 +7,19 @@
   <form class="addAssignment" action="<?php echo BASE_URL; ?>/admin/add.php" method="post" autocomplete="off" enctype="multipart/form-data">
     <label for="title">
       <p>Title</p>
-      <input type="text" name="title" id="title">
+      <input type="text" name="title" id="title" required>
     </label>
     <label for="content">
       <p>Content</p>
-      <textarea name="content" id="content" rows="10" cols="30"></textarea>
+      <textarea name="content" id="content" rows="10" cols="30" required></textarea>
     </label>
     <label for="image">
       <p>Image</p>
-      <input type="file" name="image" id="image">
+      <input type="file" name="image" id="image" required>
     </label>
     <label for="assignmentfile">
       <p>File</p>
-      <input type="file" name="assignmentfile" id="assignmentfile">
+      <input type="file" name="assignmentfile" id="assignmentfile" required>
     </label>
     <label for="vak">
       <p>Vak</p>
