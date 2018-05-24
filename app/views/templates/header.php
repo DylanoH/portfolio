@@ -14,14 +14,14 @@
 
   <body>
     <header>
-      <div id="mySidenav" class="sidenav">
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+      <div class="sidenav">
+        <a href="#">test</a>
+        <a href="#">test</a>
+        <a href="#">test</a>
+        <a href="#">test</a>
       </div>
 
-      <div class="hamburger-container" onclick="OpenNav()">
+      <div class="hamburger-container">
         <div class="hamburger1"></div>
         <div class="hamburger2"></div>
         <div class="hamburger3"></div>

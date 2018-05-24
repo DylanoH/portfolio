@@ -21,12 +21,18 @@ header .sidenav {
   background-color: #f2f2f2;
   overflow-x: hidden;
   /* Disable horizontal scroll */
-  padding-top: 60px;
-  /* Place content 60px from the top */
   transition: 0.5s;
   /* 0.5 second transition effect to slide in the sidenav */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-/* line 17, ../sass/_nav.scss */
+/* line 20, ../sass/_nav.scss */
+header .widthChange .sidenav {
+  width: 100%;
+}
+/* line 25, ../sass/_nav.scss */
 header .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -35,11 +41,11 @@ header .sidenav a {
   display: block;
   transition: 0.3s;
 }
-/* line 27, ../sass/_nav.scss */
+/* line 35, ../sass/_nav.scss */
 header .sidenav a:hover {
   color: #f1f1f1;
 }
-/* line 32, ../sass/_nav.scss */
+/* line 40, ../sass/_nav.scss */
 header .sidenav .closebtn {
   position: absolute;
   top: 0;
@@ -47,16 +53,16 @@ header .sidenav .closebtn {
   font-size: 36px;
   margin-left: 50px;
 }
-/* line 40, ../sass/_nav.scss */
+/* line 48, ../sass/_nav.scss */
 header .hamburger-container {
   position: fixed;
   top: 10px;
-  right: 10px;
+  left: 10px;
   display: inline-block;
   cursor: pointer;
   z-index: 3;
 }
-/* line 49, ../sass/_nav.scss */
+/* line 57, ../sass/_nav.scss */
 header .hamburger-container .hamburger1, header .hamburger-container .hamburger2, header .hamburger-container .hamburger3 {
   width: 35px;
   height: 5px;
@@ -64,16 +70,16 @@ header .hamburger-container .hamburger1, header .hamburger-container .hamburger2
   margin: 6px 0;
   transition: 0.4s;
 }
-/* line 58, ../sass/_nav.scss */
+/* line 66, ../sass/_nav.scss */
 header .change .hamburger1 {
   transform: rotate(-45deg) translate(-9px, 6px);
   background-color: #171717;
 }
-/* line 62, ../sass/_nav.scss */
+/* line 70, ../sass/_nav.scss */
 header .change .hamburger2 {
   opacity: 0;
 }
-/* line 65, ../sass/_nav.scss */
+/* line 73, ../sass/_nav.scss */
 header .change .hamburger3 {
   transform: rotate(45deg) translate(-8px, -8px);
   background-color: #171717;

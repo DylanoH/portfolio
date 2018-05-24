@@ -6,13 +6,9 @@ $(document).ready(function(){
 
   $('.hamburger-container').on('click', function() {
     this.classList.toggle('change');
-    document.getElementById("mySidenav").style.width = "100%";
+    var toggleWidth = $('.sidenav').width() > 800 ? "0px" : "100%";
+    $('.sidenav').animate({ width: toggleWidth });
   });
-
-  /* Open the sidenav */
-function openNav() {
-
-}
 
 /* Close/hide the sidenav */
 function closeNav() {

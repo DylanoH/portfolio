@@ -9,8 +9,16 @@ header {
     left: 0;
     background-color: $white;
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
+
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.widthChange .sidenav  {
+  width: 100%;
 }
 
 /* The navigation menu links */
@@ -40,7 +48,7 @@ header {
   .hamburger-container {
     position: fixed;
     top: 10px;
-    right: 10px;
+    left: 10px;
     display: inline-block;
     cursor: pointer;
     z-index: 3;
@@ -66,9 +74,4 @@ header {
     transform: rotate(45deg) translate(-8px, -8px);
     background-color: $black;
   }
-
-
-
-
-
 }
