@@ -1,4 +1,5 @@
 <?php require VIEW_ROOT . '/templates/header.php'; ?>
+<?php session_start(); ?>
 
   <?php  if (empty($pages)): ?>
     <p>Sorry, no pages at the moment.</p>
@@ -20,7 +21,10 @@
 
 
   <a href="<?php echo BASE_URL ?>/admin/login.php" class="login-button">login</a>
-  <a href="<?php echo BASE_URL ?>/admin/logout.php" class="logout-button">logout</a>
+  <?php if (isset($_SESSION['user'])): ?>
+      <a href="<?php echo BASE_URL ?>/admin/logout.php" class="logout-button">logout</a>
+  <?php endif; ?>
+
 
 
 <?php require VIEW_ROOT . '/templates/footer.php'; ?>

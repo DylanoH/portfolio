@@ -3,10 +3,13 @@ $black: #171717;
 $white: #f2f2f2;
 $turquose: #40E0D0;
 
+$home-text-color: $turquose;
 $black-hover: #444343;
 
 // background colors
-$course-background-color: #2d2d2d;
+$background-color: $white;
+$course-background-color: $white;
 $loginbutton-background-color: #f2f2f2;
-$loginbutton-background-color-hover: #bdbdbd;
-$login-background-color: linear-gradient(to bottom right, #7a7a7a, #cdcdcd);
+$loginbutton-background-color-hover: $turquose;
+//$login-background-color: linear-gradient(to bottom right, #7a7a7a, #cdcdcd);
+$login-background-color: $white;

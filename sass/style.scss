@@ -4,6 +4,8 @@
 @import 'nav';
 @import 'login';
 @import 'home';
+@import 'pages';
+@import 'adminpanel';
 
 *, *:before, *:after {
   box-sizing: inherit;
@@ -12,7 +14,8 @@
 html, body {
   width: 100%;
   height: 100%;
-  color: black;
+  color: $black;
+  background-color: $background-color;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -23,7 +26,7 @@ main {
   margin: 0 auto;
   padding: 0px;
   width: 100%;
-  background-color: #fff;
+  background-color: $background-color;
 }
 
 h1, h2, h3, h4, h5 {
@@ -49,38 +52,4 @@ label {
 
 .faded {
   color: #bbb;
-}
-
-
-.overview {
-  display: flex;
-  justify-content: space-around;
-
-
-  .list-wrapper{
-    max-width: 20vw;
-
-    .list-headers {
-      text-transform: uppercase;
-      font-weight: bold;
-      text-decoration: none;
-      a {
-        color: black;
-      }
-    }
-
-    .list {
-      list-style-type :none;
-      padding: 0px 0px 0px 15px;
-      margin: 0px;
-
-      a {
-        color: black;
-      }
-    }
-  }
-}
-
-.assignment {
-  background-color: $white;
 }

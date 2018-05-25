@@ -11,7 +11,7 @@
         <ul class="list">
             <?php foreach ($assignments as $assignment): ?>
                 <?php if ($assignment['vak'] == $vak['vak']): ?>
-                   <li><a href="<?php echo BASE_URL; ?>/admin/edit.php?id=<?php echo e($assignment['id']) ?>">  <?php echo e($assignment['title']); ?></a>    <a href="<?php echo BASE_URL; ?>/admin/delete.php?id=<?php echo e($assignment['id']); ?>"> Del</a></li>
+                   <li><a href="<?php echo BASE_URL; ?>/admin/edit.php?id=<?php echo e($assignment['id']) ?>">  <?php echo e($assignment['title']); ?></a>    <a href="<?php echo BASE_URL; ?>/admin/delete.php?id=<?php echo e($assignment['id']); ?>"> <img src="<?php BASE_URL; ?>/resources/downloads/del.png"></a></li>
                 <?php endif; ?>
             <?php endforeach; ?>
         </ul>

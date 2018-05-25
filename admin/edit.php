@@ -27,10 +27,10 @@
 
         /////////// ATTEMPT TO CHECK IF THERE IS AN IMAGE ALREADY /////////////
         // if (isset($assignment['image']) && isset($assignment['assignment'])) {
-        //
+        // img and pdf is required
         // }
         // else {
-        //
+        // form accept without img and pdf
         // }
 
 

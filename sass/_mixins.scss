@@ -23,32 +23,32 @@
   width: 50vw;
   height: 50vh;
   background-color: $course-background-color;
-  color: white;
+  color: $black;
   font-size: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  border: 2px solid white;
+  border: 2px solid $black;
 
   &:link {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: $black;
   }
   &:visited {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: $black;
 
   }
 
   &:hover {
     text-decoration: none;
-    color: rgb(180, 180, 180);
+    color: $turquose;
   }
 
   &:active {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color:$black;
   }
 
 }
