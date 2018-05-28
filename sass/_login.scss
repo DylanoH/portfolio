@@ -11,15 +11,13 @@
     width: 35vw;
     height: 32vh;
     border-radius: 15px;
-    box-shadow: 1px 2px 15px rgb(93, 93, 93);
+    box-shadow: $backshadow;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-
     background-color: $white;
-
 
     input[type="text"], input[type="password"] {
       width: 22vw;

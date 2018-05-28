@@ -1,5 +1,31 @@
 $(document).ready(function(){
 
+
+
+  $('.assignment:gt(2)').removeClass('fadeOnLoad').addClass('fadeInLeft');
+
+  $('.fadeOnLoad').each( function(i){
+    var el = $(this);
+    setTimeout(function(){
+      $(el).animate({'opacity':'1','margin-left':'0px'}, 1000);
+
+  }, 200 * i);
+
+
+  });
+  // $('.assignmentPage:nth-child(3)').nextAll().addClass('fadeInLeft');
+
+  $(window).scroll( function(){
+    $('.fadeInLeft').each( function(i){
+      var top_of_object = $(this).position().top + $(this).outerHeight();
+      var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+      if( bottom_of_window > top_of_object ){
+          $(this).animate({'opacity':'1', 'margin-left' : '0px'}, 1000);
+      }
+    });
+  });
+
   // nav //
   $('.hamburger-container').on('click', function() {
 
@@ -52,10 +78,4 @@ $(document).ready(function(){
           }
       });
   });
-
-
-
-
-
-
 });

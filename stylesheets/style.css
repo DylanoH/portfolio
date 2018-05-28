@@ -90,21 +90,21 @@ header .change .hamburger3 {
   width: 35vw;
   height: 32vh;
   border-radius: 15px;
-  box-shadow: 1px 2px 15px #5d5d5d;
+  box-shadow: 1px 4px 15px #5d5d5d;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #f2f2f2;
 }
-/* line 24, ../sass/_login.scss */
+/* line 22, ../sass/_login.scss */
 .login .formLogin input[type="text"], .login .formLogin input[type="password"] {
   width: 22vw;
   height: 50px;
   padding-left: 7px;
   margin-bottom: 10px;
 }
-/* line 32, ../sass/_login.scss */
+/* line 30, ../sass/_login.scss */
 .login .formLogin #submitLogin {
   border-radius: 16px;
   border: 0px;
@@ -113,7 +113,7 @@ header .change .hamburger3 {
   color: white;
   background-color: #171717;
 }
-/* line 42, ../sass/_login.scss */
+/* line 40, ../sass/_login.scss */
 .login .formLogin #submitLogin:hover {
   background-color: #444343;
   cursor: pointer;
@@ -141,22 +141,22 @@ header .change .hamburger3 {
   align-items: center;
   border: 2px solid #171717;
 }
-/* line 34, ../sass/_mixins.scss */
+/* line 38, ../sass/_mixins.scss */
 .courses .uxu:link {
   text-decoration: none;
   color: #171717;
 }
-/* line 38, ../sass/_mixins.scss */
+/* line 42, ../sass/_mixins.scss */
 .courses .uxu:visited {
   text-decoration: none;
   color: #171717;
 }
-/* line 44, ../sass/_mixins.scss */
+/* line 48, ../sass/_mixins.scss */
 .courses .uxu:hover {
   text-decoration: none;
   color: #40E0D0;
 }
-/* line 49, ../sass/_mixins.scss */
+/* line 53, ../sass/_mixins.scss */
 .courses .uxu:active {
   text-decoration: none;
   color: #171717;
@@ -173,22 +173,22 @@ header .change .hamburger3 {
   align-items: center;
   border: 2px solid #171717;
 }
-/* line 34, ../sass/_mixins.scss */
+/* line 38, ../sass/_mixins.scss */
 .courses .ded:link {
   text-decoration: none;
   color: #171717;
 }
-/* line 38, ../sass/_mixins.scss */
+/* line 42, ../sass/_mixins.scss */
 .courses .ded:visited {
   text-decoration: none;
   color: #171717;
 }
-/* line 44, ../sass/_mixins.scss */
+/* line 48, ../sass/_mixins.scss */
 .courses .ded:hover {
   text-decoration: none;
   color: #40E0D0;
 }
-/* line 49, ../sass/_mixins.scss */
+/* line 53, ../sass/_mixins.scss */
 .courses .ded:active {
   text-decoration: none;
   color: #171717;
@@ -211,22 +211,22 @@ header .change .hamburger3 {
   align-items: center;
   border: 2px solid #171717;
 }
-/* line 34, ../sass/_mixins.scss */
+/* line 38, ../sass/_mixins.scss */
 .courses .sco:link {
   text-decoration: none;
   color: #171717;
 }
-/* line 38, ../sass/_mixins.scss */
+/* line 42, ../sass/_mixins.scss */
 .courses .sco:visited {
   text-decoration: none;
   color: #171717;
 }
-/* line 44, ../sass/_mixins.scss */
+/* line 48, ../sass/_mixins.scss */
 .courses .sco:hover {
   text-decoration: none;
   color: #40E0D0;
 }
-/* line 49, ../sass/_mixins.scss */
+/* line 53, ../sass/_mixins.scss */
 .courses .sco:active {
   text-decoration: none;
   color: #171717;
@@ -243,22 +243,22 @@ header .change .hamburger3 {
   align-items: center;
   border: 2px solid #171717;
 }
-/* line 34, ../sass/_mixins.scss */
+/* line 38, ../sass/_mixins.scss */
 .courses .pt:link {
   text-decoration: none;
   color: #171717;
 }
-/* line 38, ../sass/_mixins.scss */
+/* line 42, ../sass/_mixins.scss */
 .courses .pt:visited {
   text-decoration: none;
   color: #171717;
 }
-/* line 44, ../sass/_mixins.scss */
+/* line 48, ../sass/_mixins.scss */
 .courses .pt:hover {
   text-decoration: none;
   color: #40E0D0;
 }
-/* line 49, ../sass/_mixins.scss */
+/* line 53, ../sass/_mixins.scss */
 .courses .pt:active {
   text-decoration: none;
   color: #171717;
@@ -308,18 +308,22 @@ header .change .hamburger3 {
 /* line 6, ../sass/_mixins.scss */
 .login-button:link {
   text-decoration: none;
+  outline: none;
 }
-/* line 10, ../sass/_mixins.scss */
+/* line 11, ../sass/_mixins.scss */
 .login-button:visited {
   text-decoration: none;
+  outline: none;
 }
-/* line 14, ../sass/_mixins.scss */
+/* line 16, ../sass/_mixins.scss */
 .login-button:hover {
   text-decoration: none;
+  outline: none;
 }
-/* line 18, ../sass/_mixins.scss */
+/* line 21, ../sass/_mixins.scss */
 .login-button:active {
   text-decoration: none;
+  outline: none;
 }
 /* line 79, ../sass/_home.scss */
 .login-button:hover {
@@ -347,18 +351,22 @@ header .change .hamburger3 {
 /* line 6, ../sass/_mixins.scss */
 .logout-button:link {
   text-decoration: none;
+  outline: none;
 }
-/* line 10, ../sass/_mixins.scss */
+/* line 11, ../sass/_mixins.scss */
 .logout-button:visited {
   text-decoration: none;
+  outline: none;
 }
-/* line 14, ../sass/_mixins.scss */
+/* line 16, ../sass/_mixins.scss */
 .logout-button:hover {
   text-decoration: none;
+  outline: none;
 }
-/* line 18, ../sass/_mixins.scss */
+/* line 21, ../sass/_mixins.scss */
 .logout-button:active {
   text-decoration: none;
+  outline: none;
 }
 /* line 101, ../sass/_home.scss */
 .logout-button:hover {
@@ -368,8 +376,79 @@ header .change .hamburger3 {
 }
 
 /* line 1, ../sass/_pages.scss */
-.assignment {
+.backButton {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  border: 0;
   background-color: #f2f2f2;
+}
+/* line 6, ../sass/_mixins.scss */
+.backButton:link {
+  text-decoration: none;
+  outline: none;
+}
+/* line 11, ../sass/_mixins.scss */
+.backButton:visited {
+  text-decoration: none;
+  outline: none;
+}
+/* line 16, ../sass/_mixins.scss */
+.backButton:hover {
+  text-decoration: none;
+  outline: none;
+}
+/* line 21, ../sass/_mixins.scss */
+.backButton:active {
+  text-decoration: none;
+  outline: none;
+}
+/* line 10, ../sass/_pages.scss */
+.backButton:hover {
+  color: #40E0D0;
+  cursor: pointer;
+}
+
+/* line 16, ../sass/_pages.scss */
+.assignmentPage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+/* line 24, ../sass/_pages.scss */
+.assignmentPage .fadeInLeft, .assignmentPage .fadeOnLoad {
+  opacity: 0;
+  margin-left: -300px;
+  max-width: 100%;
+}
+/* line 31, ../sass/_pages.scss */
+.assignmentPage .assignment {
+  width: 70vw;
+  box-shadow: 1px 4px 15px #5d5d5d;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+  padding: 25px;
+  display: flex;
+}
+/* line 40, ../sass/_pages.scss */
+.assignmentPage .assignment .assignmentLeft {
+  width: 50%;
+}
+/* line 42, ../sass/_pages.scss */
+.assignmentPage .assignment .assignmentLeft h2 {
+  font-weight: bold;
+  font-size: 45px;
+}
+/* line 46, ../sass/_pages.scss */
+.assignmentPage .assignment .assignmentLeft img {
+  width: 40%;
+}
+/* line 51, ../sass/_pages.scss */
+.assignmentPage .assignment .assignmentRight {
+  width: 50%;
 }
 
 /* line 1, ../sass/_adminpanel.scss */
@@ -382,25 +461,37 @@ header .change .hamburger3 {
 .overview .list-wrapper {
   max-width: 20vw;
 }
-/* line 10, ../sass/_adminpanel.scss */
+/* line 11, ../sass/_adminpanel.scss */
 .overview .list-wrapper .list-headers {
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
+  font-size: 45px;
 }
-/* line 14, ../sass/_adminpanel.scss */
+/* line 16, ../sass/_adminpanel.scss */
 .overview .list-wrapper .list-headers a {
   color: #171717;
 }
-/* line 19, ../sass/_adminpanel.scss */
+/* line 18, ../sass/_adminpanel.scss */
+.overview .list-wrapper .list-headers a:hover {
+  color: #40E0D0;
+  text-decoration: none;
+}
+/* line 26, ../sass/_adminpanel.scss */
 .overview .list-wrapper .list {
   list-style-type: none;
   padding: 0px 0px 0px 15px;
   margin: 0px;
 }
-/* line 24, ../sass/_adminpanel.scss */
-.overview .list-wrapper .list a {
+/* line 32, ../sass/_adminpanel.scss */
+.overview .list-wrapper .list li a {
+  font-size: 17px;
   color: #171717;
+}
+/* line 35, ../sass/_adminpanel.scss */
+.overview .list-wrapper .list li a:hover {
+  color: #40E0D0;
+  text-decoration: none;
 }
 
 /* line 10, ../sass/style.scss */

@@ -5,18 +5,22 @@
 @mixin textDecorationNone() {
   &:link {
     text-decoration: none;
+          outline: none;
   }
 
   &:visited {
       text-decoration: none;
+            outline: none;
   }
 
   &:hover {
       text-decoration: none;
+            outline: none;
   }
 
   &:active {
       text-decoration: none;
+      outline: none;
   }
 }
 @mixin course-style() {
