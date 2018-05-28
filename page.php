@@ -20,7 +20,7 @@
 
     $vak = $_GET['page'];
     $content = $con->prepare("
-      SELECT title, content, image, assignment
+      SELECT id, title, content, image, assignment
       FROM course
       WHERE vak = :vak
     ");

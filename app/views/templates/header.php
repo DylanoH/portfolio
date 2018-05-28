@@ -16,25 +16,36 @@
   <body>
     <header>
       <nav>
+        <div class="hamburger-container">
+          <div class="hamburger1"></div>
+          <div class="hamburger2"></div>
+          <div class="hamburger3"></div>
+        </div>
+
+
         <div class="nav">
           <div class="sidenav">
 
+            <a href="<?php echo BASE_URL ?>">home</a>
+            <a href="<?php echo BASE_URL ?>/page.php?page=uxu">uxu</a>
+            <a href="<?php echo BASE_URL ?>/page.php?page=ded">ded</a>
+            <a href="<?php echo BASE_URL ?>/page.php?page=sco">sco</a>
+            <a href="<?php echo BASE_URL ?>/page.php?page=pt">pt</a>
+            <a href="<?php echo BASE_URL ?>/page.php?page=me">me</a>
+
+            <?php /* ?>
             <?php foreach($pages as $page): ?>
               <a href="<?php echo BASE_URL;?>/page.php?page=<?php echo $page['slug'];?>">
                 <?php echo $page['label']; ?>
               </a>
             <?php endforeach; ?>
+            <?php */ ?>
           </div>
         </div>
       </nav>
 
 
 
-      <div class="hamburger-container">
-        <div class="hamburger1"></div>
-        <div class="hamburger2"></div>
-        <div class="hamburger3"></div>
-      </div>
 
 
     </header>
