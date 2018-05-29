@@ -17,7 +17,7 @@
           $target_file_document = $target_directory . basename($assignment); // target_directory en naam van bestand
           $imageFileType = strtolower(pathinfo($target_file_image, PATHINFO_EXTENSION)); // file extensie .png bijvoorbeeld
           $documentFileType = strtolower(pathinfo($target_file_document, PATHINFO_EXTENSION)); // file extensie .png bijvoorbeeld
-          $extensions_array = array("jpg", "jpeg", "png", "gif"); // extensies die jij ok vindt
+          $extensions_array = array("jpg", "JPG", "jpeg", "png", "gif"); // extensies die jij ok vindt
 
           if ((in_array($imageFileType, $extensions_array)) && ($documentFileType == "pdf")) { // check if extensie erbij zit
             $insertAssignment = $con->prepare("

@@ -15,9 +15,9 @@
       font-size: $font-size-h2;
       a {
         color: $black;
+        @include textDecorationNone();
         &:hover {
           color: $turquose;
-          text-decoration: none;
         }
       }
 
@@ -30,11 +30,12 @@
 
       li {
         a {
-          font-size: $font-size-p;          
+          font-size: $font-size-p;
           color: $black;
+          @include textDecorationNone();
           &:hover {
             color: $turquose;
-            text-decoration: none;
+
           }
         }
       }

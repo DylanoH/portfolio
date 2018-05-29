@@ -1,11 +1,5 @@
-// imports
 @import 'variables';
 @import 'mixins';
-@import 'nav';
-@import 'login';
-@import 'home';
-@import 'pages';
-@import 'adminpanel';
 
 *, *:before, *:after {
   box-sizing: inherit;
@@ -19,6 +13,18 @@ html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  &::-webkit-scrollbar{
+    width: 14px;
+    background-color: $white;
+  }
+  &::-webkit-scrollbar-thumb{
+    border-radius: 9px;
+
+    background-color: $turquose;
+  }
 }
 
 
@@ -53,3 +59,11 @@ label {
 .faded {
   color: #bbb;
 }
+
+// imports
+
+@import 'nav';
+@import 'login';
+@import 'home';
+@import 'pages';
+@import 'adminpanel';

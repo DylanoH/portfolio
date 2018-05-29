@@ -4,6 +4,7 @@
   right: 10px;
   border: 0;
   background-color: $white;
+  color: $black;
   @include textDecorationNone();
 
 
@@ -29,6 +30,22 @@
   }
 }
 
+.addButton {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  border: 0;
+  color: $black;
+  @include textDecorationNone();
+
+
+  &:hover {
+    color: $turquose;
+    cursor: pointer;
+    border: 0;
+  }
+}
+
 
 .assignmentPage {
   width: 100%;
@@ -37,6 +54,11 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
+
+  h1 {
+    font-size: $font-size-h1;
+    margin-bottom: 20px;
+  }
 
   .fadeInLeft, .fadeOnLoad {
     opacity: 0;
@@ -50,38 +72,57 @@
     box-shadow: $backshadow;
     background-color: $white;
     margin-bottom: 35px;
-    padding: 25px;
+    padding: 25px 40px;
     display: flex;
 
 
     .assignmentLeft {
-            position: relative;
+      position: relative;
       width: 50%;
-      h2{
-        font-weight: bold;
-        font-size: $font-size-h2;
-      }
+
       img {
-        width: 40%;
+        width: 90%;
       }
     }
 
     .assignmentRight {
       position: relative;
       width: 50%;
+      display: flex;
+      flex-direction: column;
+
+      h2{
+        font-weight: bold;
+        font-size: $font-size-h2;
+      }
+
+      a {
+        width: 70px;
+        margin-left: auto;
+        margin-top: auto;
+        align-self: flex-end;
+        .pdfImg {
+          width: 100%;
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+
+
 
       .editButton {
         position: absolute;
         border-radius: 100%;
-        width: 100px;
-        height: 100px;
+        width: 70px;
+        height: 70px;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: $black;
         padding-left: 10px;
         color: $white;
-        right: -75px;
+        right: -65px;
         bottom: -45px;
         @include textDecorationNone();
 

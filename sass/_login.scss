@@ -34,12 +34,13 @@
       height: 45px;
       color: white;
       background-color: $black;
-
+      @include textDecorationNone();
 
 
       &:hover {
-        background-color: $black-hover;
+        background-color: $turquose;
         cursor: pointer;
+
       }
     }
   }
