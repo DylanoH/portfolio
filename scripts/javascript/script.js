@@ -20,10 +20,10 @@ $(document).ready(function(){
 
   $(window).scroll( function(){
     $('.fadeInLeft').each( function(i){
-      var top_of_object = $(this).position().top + $(this).outerHeight() - 300;
-      var bottom_of_window = $(window).scrollTop() + $(window).height();
+      var top = $(this).position().top + $(this).outerHeight() - 300;
+      var bottom = $(window).scrollTop() + $(window).height();
 
-      if( bottom_of_window > top_of_object ){
+      if( bottom > top ){
           $(this).animate({'opacity':'1', 'margin-left' : '0px'}, 1000);
       }
     });
