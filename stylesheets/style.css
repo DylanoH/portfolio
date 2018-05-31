@@ -12,20 +12,21 @@ html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 17px;
 }
 
-/* line 19, ../sass/style.scss */
+/* line 20, ../sass/style.scss */
 body::-webkit-scrollbar {
   width: 14px;
   background-color: #f2f2f2;
 }
-/* line 23, ../sass/style.scss */
+/* line 24, ../sass/style.scss */
 body::-webkit-scrollbar-thumb {
   border-radius: 9px;
   background-color: #40E0D0;
 }
 
-/* line 31, ../sass/style.scss */
+/* line 32, ../sass/style.scss */
 main {
   margin: 0 auto;
   padding: 0px;
@@ -33,31 +34,19 @@ main {
   background-color: #f2f2f2;
 }
 
-/* line 38, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 h1, h2, h3, h4, h5 {
   font-weight: 200;
 }
 
-/* line 42, ../sass/style.scss */
-input, textarea {
-  font-size: inherit;
+/* line 43, ../sass/style.scss */
+.fadeInLeft, .fadeOnLoad {
+  opacity: 0;
+  margin-left: -300px;
+  max-width: 100%;
 }
 
-/* line 46, ../sass/style.scss */
-input[type="text"], textarea {
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-  border: 1px solid #bbb;
-}
-
-/* line 53, ../sass/style.scss */
-label {
-  display: block;
-  margin-bottom: 20px;
-}
-
-/* line 59, ../sass/style.scss */
+/* line 50, ../sass/style.scss */
 .faded {
   color: #bbb;
 }
@@ -603,12 +592,6 @@ header .change .hamburger3 {
   margin-bottom: 20px;
 }
 /* line 63, ../sass/_pages.scss */
-.assignmentPage .fadeInLeft, .assignmentPage .fadeOnLoad {
-  opacity: 0;
-  margin-left: -300px;
-  max-width: 100%;
-}
-/* line 70, ../sass/_pages.scss */
 .assignmentPage .assignment {
   width: 70vw;
   box-shadow: 1px 4px 15px #5d5d5d;
@@ -617,43 +600,43 @@ header .change .hamburger3 {
   padding: 25px 40px;
   display: flex;
 }
-/* line 79, ../sass/_pages.scss */
+/* line 72, ../sass/_pages.scss */
 .assignmentPage .assignment .assignmentLeft {
   position: relative;
   width: 50%;
 }
-/* line 83, ../sass/_pages.scss */
+/* line 76, ../sass/_pages.scss */
 .assignmentPage .assignment .assignmentLeft img {
   width: 90%;
 }
-/* line 88, ../sass/_pages.scss */
+/* line 81, ../sass/_pages.scss */
 .assignmentPage .assignment .assignmentRight {
   position: relative;
   width: 50%;
   display: flex;
   flex-direction: column;
 }
-/* line 94, ../sass/_pages.scss */
+/* line 87, ../sass/_pages.scss */
 .assignmentPage .assignment .assignmentRight h2 {
   font-weight: bold;
   font-size: 36px;
 }
-/* line 99, ../sass/_pages.scss */
+/* line 92, ../sass/_pages.scss */
 .assignmentPage .assignment .assignmentRight a {
   width: 70px;
   margin-left: auto;
   margin-top: auto;
   align-self: flex-end;
 }
-/* line 104, ../sass/_pages.scss */
+/* line 97, ../sass/_pages.scss */
 .assignmentPage .assignment .assignmentRight a .pdfImg {
   width: 100%;
 }
-/* line 106, ../sass/_pages.scss */
+/* line 99, ../sass/_pages.scss */
 .assignmentPage .assignment .assignmentRight a .pdfImg:hover {
   opacity: 0.8;
 }
-/* line 114, ../sass/_pages.scss */
+/* line 107, ../sass/_pages.scss */
 .assignmentPage .assignment .assignmentRight .editButton {
   position: absolute;
   border-radius: 100%;
@@ -692,7 +675,7 @@ header .change .hamburger3 {
 .assignmentPage .assignment .assignmentRight .editButton:focus {
   outline: 0;
 }
-/* line 129, ../sass/_pages.scss */
+/* line 122, ../sass/_pages.scss */
 .assignmentPage .assignment .assignmentRight .editButton:hover {
   background-color: #40E0D0;
 }
@@ -784,4 +767,94 @@ header .change .hamburger3 {
 /* line 36, ../sass/_adminpanel.scss */
 .overview .list-wrapper .list li a:hover {
   color: #40E0D0;
+}
+
+/* line 1, ../sass/_forms.scss */
+.forms {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+/* line 10, ../sass/_forms.scss */
+.forms h2 {
+  margin-bottom: 20px;
+}
+/* line 14, ../sass/_forms.scss */
+.forms .addAssignment, .forms .editAssignment {
+  width: 35vw;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  box-shadow: 1px 4px 15px #5d5d5d;
+}
+/* line 23, ../sass/_forms.scss */
+.forms .addAssignment label, .forms .editAssignment label {
+  display: block;
+  margin-bottom: 20px;
+}
+/* line 28, ../sass/_forms.scss */
+.forms .addAssignment input[type="text"], .forms .addAssignment textarea, .forms .editAssignment input[type="text"], .forms .editAssignment textarea {
+  width: 30vw;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #171717;
+}
+/* line 36, ../sass/_forms.scss */
+.forms .addAssignment label[for="vak"]:first-child, .forms .editAssignment label[for="vak"]:first-child {
+  margin-left: 0px;
+}
+/* line 40, ../sass/_forms.scss */
+.forms .addAssignment input[type="radio"], .forms .editAssignment input[type="radio"] {
+  margin-right: 2px;
+  margin-left: 3px;
+  -webkit-transform: scale(1.5);
+  /* Chrome, Safari, Opera */
+  transform: scale(1.5);
+}
+/* line 47, ../sass/_forms.scss */
+.forms .addAssignment .formSubmit, .forms .editAssignment .formSubmit {
+  width: 120px;
+  height: 45px;
+  border: 1px solid #171717;
+  background-color: #f2f2f2;
+  color: #171717;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 6, ../sass/_mixins.scss */
+.forms .addAssignment .formSubmit:link, .forms .editAssignment .formSubmit:link {
+  text-decoration: none;
+  outline: none;
+}
+/* line 11, ../sass/_mixins.scss */
+.forms .addAssignment .formSubmit:visited, .forms .editAssignment .formSubmit:visited {
+  text-decoration: none;
+  outline: none;
+}
+/* line 16, ../sass/_mixins.scss */
+.forms .addAssignment .formSubmit:hover, .forms .editAssignment .formSubmit:hover {
+  text-decoration: none;
+  outline: none;
+}
+/* line 21, ../sass/_mixins.scss */
+.forms .addAssignment .formSubmit:active, .forms .editAssignment .formSubmit:active {
+  text-decoration: none;
+  outline: none;
+}
+/* line 25, ../sass/_mixins.scss */
+.forms .addAssignment .formSubmit:focus, .forms .editAssignment .formSubmit:focus {
+  outline: 0;
+}
+/* line 58, ../sass/_forms.scss */
+.forms .addAssignment .formSubmit:hover, .forms .editAssignment .formSubmit:hover {
+  background-color: #40E0D0;
+  color: #f2f2f2;
+  border: 0;
+  cursor: pointer;
 }

@@ -13,6 +13,7 @@ html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: $font-size-p;
 }
 
 body {
@@ -39,22 +40,12 @@ h1, h2, h3, h4, h5 {
   font-weight: 200;
 }
 
-input, textarea {
-  font-size: inherit;
+.fadeInLeft, .fadeOnLoad {
+  opacity: 0;
+  margin-left:-300px;
+  max-width:100%;
 }
 
-input[type="text"], textarea {
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-  border: 1px solid #bbb;
-}
-
-label {
-  display: block;
-  margin-bottom: 20px;
-
-}
 
 .faded {
   color: #bbb;
@@ -67,3 +58,4 @@ label {
 @import 'home';
 @import 'pages';
 @import 'adminpanel';
+@import 'forms';

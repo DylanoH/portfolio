@@ -52,6 +52,8 @@
     <main>
 
       <?php $url = $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']; ?>
+
       <?php if ($url != "localhost/portfolio/"): ?>
-        <button class="backButton fa fa-arrow-left fa-3x" onclick="history.go(-1);"></button>
+        <!-- <button class="backButton fa fa-arrow-left fa-3x" onclick="history.go(-1);"></button> -->
+        <a href="<?php echo BASE_URL; ?>" class="backButton fa fa-home fa-3x"></a>
       <?php endif; ?>

@@ -1,0 +1,67 @@
+.forms {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 20px;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  .addAssignment, .editAssignment {
+    width: 35vw;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: $backshadow;
+
+    label {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"], textarea {
+      width: 30vw;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid $black;
+    }
+
+    label[for="vak"] {
+      &:first-child {
+        margin-left: 0px;
+      }
+    }
+    input[type="radio"] {
+    margin-right: 2px;
+    margin-left: 3px;
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+    }
+
+    .formSubmit {
+      width: 120px;
+      height: 45px;
+      border: 1px solid $black;
+      background-color: $white;
+      color: $black;
+      @include textDecorationNone();
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        background-color: $loginbutton-background-color-hover;
+        color: $white;
+        border: 0;
+        cursor: pointer;
+      }
+    }
+
+  }
+}
