@@ -102,8 +102,6 @@
         }
       }
 
-
-
       .editButton {
         position: absolute;
         border-radius: 100%;
@@ -125,6 +123,25 @@
         }
       }
     }
+  }
+
+  .dedpage {
+    width: 50vw;
+
+    div {
+      margin-bottom: 20px;
+      img {
+        width: 200px;
+        margin-bottom: 20px;
+      }
+
+      .xd {
+        width: 400px;
+        margin-bottom: 20px;
+      }
+    }
+
+
   }
 
 }

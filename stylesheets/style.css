@@ -636,7 +636,7 @@ header .change .hamburger3 {
 .assignmentPage .assignment .assignmentRight a .pdfImg:hover {
   opacity: 0.8;
 }
-/* line 107, ../sass/_pages.scss */
+/* line 105, ../sass/_pages.scss */
 .assignmentPage .assignment .assignmentRight .editButton {
   position: absolute;
   border-radius: 100%;
@@ -675,9 +675,27 @@ header .change .hamburger3 {
 .assignmentPage .assignment .assignmentRight .editButton:focus {
   outline: 0;
 }
-/* line 122, ../sass/_pages.scss */
+/* line 120, ../sass/_pages.scss */
 .assignmentPage .assignment .assignmentRight .editButton:hover {
   background-color: #40E0D0;
+}
+/* line 128, ../sass/_pages.scss */
+.assignmentPage .dedpage {
+  width: 50vw;
+}
+/* line 131, ../sass/_pages.scss */
+.assignmentPage .dedpage div {
+  margin-bottom: 20px;
+}
+/* line 133, ../sass/_pages.scss */
+.assignmentPage .dedpage div img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+/* line 138, ../sass/_pages.scss */
+.assignmentPage .dedpage div .xd {
+  width: 400px;
+  margin-bottom: 20px;
 }
 
 /* line 1, ../sass/_adminpanel.scss */
