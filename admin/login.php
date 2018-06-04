@@ -7,7 +7,7 @@
      // username and password sent from form
 
      $username = e($_POST['username']);
-     $password = md5($_POST['password']);
+     $password = e(md5($_POST['password']));
 
 
      $query = "

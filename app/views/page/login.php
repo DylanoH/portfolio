@@ -14,7 +14,7 @@
   </head>
   <body>
     <main class="login">
-      <button class="backButton fa fa-arrow-left fa-3x" onclick="history.go(-1);"></button>
+      <button class="backButton fa fa-home fa-3x" onclick="history.go(-1);"></button>
       <form class="formLogin" autocomplete="off" method="post">
         <label for="title">
           <h2>ACCOUNT LOGIN</h2>

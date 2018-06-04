@@ -119,7 +119,6 @@
 
         &:hover {
           background-color: $turquose;
-
         }
       }
     }
@@ -127,6 +126,13 @@
 
   .dedpage {
     width: 50vw;
+
+    a {
+      margin-bottom: 20px;
+      margin-top: 10px;
+      color: $black;
+      @include textDecorationNone();
+    }
 
     div {
       margin-bottom: 20px;
@@ -141,7 +147,20 @@
       }
     }
 
+    .codes {
+      .code {
+        display: block;
 
+
+        .codesnippit {
+          width: 500px;
+          float: left;
+          margin-right: 30px;
+        }
+      }
+
+
+
+    }
   }
-
 }

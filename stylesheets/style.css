@@ -679,23 +679,63 @@ header .change .hamburger3 {
 .assignmentPage .assignment .assignmentRight .editButton:hover {
   background-color: #40E0D0;
 }
-/* line 128, ../sass/_pages.scss */
+/* line 127, ../sass/_pages.scss */
 .assignmentPage .dedpage {
   width: 50vw;
 }
-/* line 131, ../sass/_pages.scss */
+/* line 130, ../sass/_pages.scss */
+.assignmentPage .dedpage a {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: #171717;
+}
+/* line 6, ../sass/_mixins.scss */
+.assignmentPage .dedpage a:link {
+  text-decoration: none;
+  outline: none;
+}
+/* line 11, ../sass/_mixins.scss */
+.assignmentPage .dedpage a:visited {
+  text-decoration: none;
+  outline: none;
+}
+/* line 16, ../sass/_mixins.scss */
+.assignmentPage .dedpage a:hover {
+  text-decoration: none;
+  outline: none;
+}
+/* line 21, ../sass/_mixins.scss */
+.assignmentPage .dedpage a:active {
+  text-decoration: none;
+  outline: none;
+}
+/* line 25, ../sass/_mixins.scss */
+.assignmentPage .dedpage a:focus {
+  outline: 0;
+}
+/* line 137, ../sass/_pages.scss */
 .assignmentPage .dedpage div {
   margin-bottom: 20px;
 }
-/* line 133, ../sass/_pages.scss */
+/* line 139, ../sass/_pages.scss */
 .assignmentPage .dedpage div img {
   width: 200px;
   margin-bottom: 20px;
 }
-/* line 138, ../sass/_pages.scss */
+/* line 144, ../sass/_pages.scss */
 .assignmentPage .dedpage div .xd {
   width: 400px;
   margin-bottom: 20px;
+}
+/* line 151, ../sass/_pages.scss */
+.assignmentPage .dedpage .codes .code {
+  display: block;
+}
+/* line 155, ../sass/_pages.scss */
+.assignmentPage .dedpage .codes .code .codesnippit {
+  width: 500px;
+  float: left;
+  margin-right: 30px;
 }
 
 /* line 1, ../sass/_adminpanel.scss */

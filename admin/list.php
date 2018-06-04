@@ -20,8 +20,6 @@
 
     $assignments = $con->query($query)->fetchAll(PDO::FETCH_ASSOC);
 
-
-
     $query = "
       SELECT DISTINCT vak
       FROM course

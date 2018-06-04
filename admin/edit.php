@@ -16,22 +16,14 @@
       $vak      = $_POST['vak'];
 
       if (isset($_POST['edit'])) {
-        $name = $_FILES['image']['name']; // Naam van bestand dat je hebt geupload
-        $assignment = $_FILES['assignmentfile']['name']; // Naam van bestand dat je hebt geupload
-        $target_directory = "/Portfolio/resources/uploads/"; // Je file directory
-        $target_file_image = $target_directory . basename($name); // target_directory en naam van bestand
-        $target_file_document = $target_directory . basename($assignment); // target_directory en naam van bestand
-        $imageFileType = strtolower(pathinfo($target_file_image, PATHINFO_EXTENSION)); // file extensie .png bijvoorbeeld
-        $documentFileType = strtolower(pathinfo($target_file_document, PATHINFO_EXTENSION)); // file extensie .png bijvoorbeeld
-        $extensions_array = array("jpg", "jpeg", "png", "gif"); // extensies die jij ok vindt
-
-        /////////// ATTEMPT TO CHECK IF THERE IS AN IMAGE ALREADY /////////////
-        // if (isset($assignment['image']) && isset($assignment['assignment'])) {
-        // img and pdf is required
-        // }
-        // else {
-        // form accept without img and pdf
-        // }
+        $name = $_FILES['image']['name'];
+        $assignment = $_FILES['assignmentfile']['name'];
+        $target_directory = "/Portfolio/resources/uploads/";
+        $target_file_image = $target_directory . basename($name);
+        $target_file_document = $target_directory . basename($assignment);
+        $imageFileType = strtolower(pathinfo($target_file_image, PATHINFO_EXTENSION));
+        $documentFileType = strtolower(pathinfo($target_file_document, PATHINFO_EXTENSION));
+        $extensions_array = array("jpg", "jpeg", "png", "gif");
 
 
         if ((in_array($imageFileType, $extensions_array)) && ($documentFileType == "pdf")) {
