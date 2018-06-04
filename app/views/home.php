@@ -2,8 +2,6 @@
 <?php session_start(); ?>
 
   <div class="courses">
-    <?php //shuffle($pages); ?>
-    <?php //print_r($pages); ?>
     <?php foreach($pages as $page): ?>
         <a href="<?php echo BASE_URL;?>/page.php?page=<?php echo $page['slug'];?>"  class="course <?php echo $page['slug']; ?>">
         <div>
