@@ -13,9 +13,6 @@
     <?php endforeach; ?>
   </div>
 
-
-
-
   <?php if (isset($_SESSION['user'])): ?>
       <a href="<?php echo BASE_URL ?>/admin/list.php" class="login-button">admin</a>
       <a href="<?php echo BASE_URL ?>/admin/logout.php" class="logout-button">log uit</a>

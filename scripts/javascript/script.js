@@ -16,7 +16,7 @@ $(document).ready(function(){
   }, function() {
     $('.hamburger1, .hamburger2, .hamburger3').css('background-color', '#171717');
   });
-  // $('.assignmentPage:nth-child(3)').nextAll().addClass('fadeInLeft');
+
 
   $(window).scroll( function(){
     $('.fadeInLeft').each( function(i){
@@ -27,11 +27,6 @@ $(document).ready(function(){
           $(this).animate({'opacity':'1', 'margin-left' : '0px'}, 1000);
       }
     });
-
-    // if($(this).scrollTop() + $(window).height() >= $(document).height()) {
-    //   $('.downButton').css('opacity', '0');
-    //   $('.upButton').css('opacity', '1');
-    // }
   });
 
   $('.upButton').on('click', function(){

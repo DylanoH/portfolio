@@ -6,7 +6,7 @@
 <?php case "ded": ?> <!-- DED -->
 
   <div class="fadeOnLoad dedpage">
-    <a href="https://github.com/DylanoH/portfolio" target="_blank" class="fa fa-github fa-2x">Link to github repo.</a>
+    <a href="https://github.com/DylanoH/portfolio" target="_blank" class="fa fa-github fa-2x">Link naar GitHub repo.</a>
     <div class="sprint1">
 
       <h2>Sprint 1</h2>
@@ -54,7 +54,7 @@
         Als tip heb ik gekregen om echt te kijken naar inspiratie sites voor onderdelen die ik
         tof vind, en die na te maken. Er is een grote kans dat dan ook goed uitziet bij mij.
       </p>
-      <a href="<?php echo BASE_URL ?>/process/sprint1" target="_blank" class="fa fa-link">Sprint 1</a>
+      <a href="<?php echo BASE_URL ?>/process/sprint1" target="_blank" class="fa fa-link"> <span>Sprint 1</span></a>
     </div>
     <hr>
     <div class="sprint2">
@@ -70,22 +70,22 @@
         zelf kan. Ik zou zelf zowiezo een aantal code gerelateerde dingen anders doen dan de
         tutorial.
       </p>
-      <a href="<?php echo BASE_URL ?>/process/sprint2" target="_blank" class="fa fa-link"> Sprint 2</a>
+      <a href="<?php echo BASE_URL ?>/process/sprint2" target="_blank" class="fa fa-link"> <span>Sprint 2</span></a>
     </div>
     <hr>
     <div class="sprint3">
       <h2>Sprint 3</h2>
-      <a href="<?php echo BASE_URL ?>/process/sprint3" target="_blank" class="fa fa-link"> Sprint 3</a>
+      <a href="<?php echo BASE_URL ?>/process/sprint3" target="_blank" class="fa fa-link"> <span>Sprint 3</span></a>
     </div>
     <hr>
     <div class="sprint4">
       <h2>Sprint 4</h2>
-      <a href="<?php echo BASE_URL ?>/process/sprint4" target="_blank" class="fa fa-link"> Sprint 4</a>
+      <a href="<?php echo BASE_URL ?>/process/sprint4" target="_blank" class="fa fa-link"> <span>Sprint 4</span></a>
     </div>
     <hr>
     <div class="sprint5">
       <h2>Sprint 5</h2>
-      <a href="<?php echo BASE_URL ?>" target="_blank" class="fa fa-link"> Sprint 5</a>
+      <a href="<?php echo BASE_URL ?>" target="_blank" class="fa fa-link"> <span>Sprint 5</span></a>
     </div>
     <hr>
     <div class="codes">
@@ -107,8 +107,54 @@
         <img src="<?php echo BASE_URL ?>/resources/uploads/delete.png" class="codesnippit" alt="">
         <p>asndakjsnd kjasndkj asnkjdnasndakjsnd kjasndkj asnkjdn kjas kjasn</p>
         <p>asndakjsnd kjasndkj asnkjdnasndakjsnd kjasndkj asnkjdn kjas kjasn</p>
-
       </div>
+      <div style="clear:both;"></div>
+      <div class="code">
+        <h3>Edit</h3>
+        <img src="<?php echo BASE_URL ?>/resources/uploads/edit1.png" class="codesnippit" alt="">
+        <img src="<?php echo BASE_URL ?>/resources/uploads/edit2.png" class="codesnippit" alt="">
+        <p>asndakjsnd kjasndkj asnkjdnasndakjsnd kjasndkj asnkjdn kjas kjasn</p>
+        <p>asndakjsnd kjasndkj asnkjdnasndakjsnd kjasndkj asnkjdn kjas kjasn</p>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="code">
+        <h3>List</h3>
+        <img src="<?php echo BASE_URL ?>/resources/uploads/list1.png" class="codesnippit" alt="">
+        <img src="<?php echo BASE_URL ?>/resources/uploads/list2.png" class="codesnippit" alt="">
+        <p>asndakjsnd kjasndkj asnkjdnasndakjsnd kjasndkj asnkjdn kjas kjasn</p>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="code">
+        <h3>Page</h3>
+        <img src="<?php echo BASE_URL ?>/resources/uploads/page.png" class="codesnippit" alt="">
+        <p>asndakjsnd kjasndkj asnkjdnasndakjsnd kjasndkj asnkjdn kjas kjasn</p>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="code">
+        <h3>Page</h3>
+        <img src="<?php echo BASE_URL ?>/resources/uploads/page.png" class="codesnippit" alt="">
+        <p>asndakjsnd kjasndkj asnkjdnasndakjsnd kjasndkj asnkjdn kjas kjasn</p>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="code">
+        <h3>Fade in left</h3>
+        <img src="<?php echo BASE_URL ?>/resources/uploads/fadeleft.png" class="codesnippit" alt="">
+        <p>asndakjsnd kjasndkj asnkjdnasndakjsnd kjasndkj asnkjdn kjas kjasn</p>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="code">
+        <h3>Fade on load</h3>
+        <img src="<?php echo BASE_URL ?>/resources/uploads/fadeload.png" class="codesnippit" alt="">
+        <p>asndakjsnd kjasndkj asnkjdnasndakjsnd kjasndkj asnkjdn kjas kjasn</p>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="code">
+        <h3>SCSS nest trap</h3>
+        <img src="<?php echo BASE_URL ?>/resources/uploads/scss.png" class="codesnippit" alt="">
+        <img src="<?php echo BASE_URL ?>/resources/uploads/css.png" class="codesnippit" alt="">
+        <p>asndakjsnd kjasndkj asnkjdnasndakjsnd kjasndkj asnkjdn kjas kjasn</p>
+      </div>
+      <div style="clear:both;"></div>
 
 
     </div>

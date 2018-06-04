@@ -28,10 +28,5 @@
     $content = $content->fetchAll(PDO::FETCH_ASSOC);
   }
 
-
-
   require VIEW_ROOT . '/page/show.php';
-
-
-
 ?>

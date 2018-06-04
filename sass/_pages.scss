@@ -132,6 +132,14 @@
       margin-top: 10px;
       color: $black;
       @include textDecorationNone();
+
+      span {
+        font-family: sans-serif;
+      }
+
+      &:hover {
+        color: $turquose;
+      }
     }
 
     div {
@@ -151,16 +159,12 @@
       .code {
         display: block;
 
-
         .codesnippit {
           width: 500px;
           float: left;
           margin-right: 30px;
         }
       }
-
-
-
     }
   }
 }

@@ -23,6 +23,6 @@
   <?php endif; ?>
     </div>
 
-  <a href="<?php echo BASE_URL; ?>/admin/add.php" class="addButton fa fa-plus fa-3x"></a>
+  <a href="<?php echo BASE_URL; ?>/admin/add.php">Add new assignment</a>
 
 <?php require VIEW_ROOT . '/templates/footer.php'; ?>
