@@ -3,15 +3,6 @@
   session_start();
   if (isset($_SESSION['user'])) {
 
-
-    $query = "
-    SELECT id, label, title, slug
-    FROM pages
-    ORDER BY id
-    ";
-
-    $pages = $con->query($query)->fetchAll(PDO::FETCH_ASSOC);
-
     $query = "
     SELECT id, title, vak
     FROM course

@@ -1,8 +1,6 @@
 <?php require VIEW_ROOT . '/templates/header.php'; ?>
 
-  <?php if(empty($pages)): ?>
-    <p>No pages at the moment.</p>
-  <?php else: ?>
+
     <div class="overview">
     <?php foreach ($vakken as $vak):?>
       <div class="list-wrapper">
@@ -15,12 +13,8 @@
                 <?php endif; ?>
             <?php endforeach; ?>
         </ul>
-
-
       </div>
     <?php endforeach; ?>
-
-  <?php endif; ?>
     </div>
 
     <a href="<?php echo BASE_URL; ?>/admin/add.php" class="addButton fa fa-plus fa-3x"></a>
