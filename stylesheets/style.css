@@ -747,6 +747,11 @@ header .change .hamburger3 {
   margin-right: 30px;
 }
 
+/* line 172, ../sass/_pages.scss */
+.clearfix {
+  clear: both;
+}
+
 /* line 1, ../sass/_adminpanel.scss */
 .overview {
   display: flex;

@@ -4,11 +4,9 @@
   $error = "";
 
   if($_SERVER["REQUEST_METHOD"] == "POST") {
-     // username and password sent from form
 
      $username = e($_POST['username']);
      $password = e(md5($_POST['password']));
-
 
      $query = "
      SELECT id
@@ -21,8 +19,6 @@
        'username' => $username,
        'password' => $password
      ]);
-
-     $row = $loginAttempt->fetch(PDO::FETCH_ASSOC);
 
      $result = $loginAttempt->rowCount() ? true : false;
 
@@ -38,7 +34,6 @@
        $error = "Oeps, er ging iets mis.";
      }
   }
-
 
   require VIEW_ROOT . '/page/login.php';
 ?>

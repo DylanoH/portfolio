@@ -23,27 +23,27 @@
         <p>Vak</p>
 
         <input type="radio" name="vak" id="vak" value="uxu" <?php
-        if (e($assignment['vak']) == $uxu ) {
+        if (e($assignment['vak']) == "uxu" ) {
           echo 'checked = "checked"';
         }
         ?>></input> <span>uxu</span>
         <input type="radio" name="vak" id="vak" value="ded" <?php
-        if (e($assignment['vak']) == $ded ) {
+        if (e($assignment['vak']) == "ded" ) {
           echo 'checked = "checked"';
         }
         ?>></input> <span>ded</span>
         <input type="radio" name="vak" id="vak" value="sco" <?php
-        if (e($assignment['vak']) == $sco ) {
+        if (e($assignment['vak']) == "sco" ) {
           echo 'checked = "checked"';
         }
         ?>></input> <span>sco</span>
         <input type="radio" name="vak" id="vak" value="pt" <?php
-        if (e($assignment['vak']) == $pt ) {
+        if (e($assignment['vak']) == "pt" ) {
           echo 'checked = "checked"';
         }
         ?>></input> <span>pt</span>
         <input type="radio" name="vak" id="vak" value="me" <?php
-        if (e($assignment['vak']) == $me ) {
+        if (e($assignment['vak']) == "me" ) {
           echo 'checked = "checked"';
         }
         ?>></input> <span>me</span>

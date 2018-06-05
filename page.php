@@ -17,7 +17,6 @@
 
     $page = $page->fetch(PDO::FETCH_ASSOC);
 
-
     $vak = $_GET['page'];
     $content = $con->prepare("
       SELECT id, title, content, image, assignment

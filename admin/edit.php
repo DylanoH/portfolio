@@ -3,11 +3,6 @@
   session_start();
 
   if (isset($_SESSION['user'])) {
-    $ded = "ded";
-    $uxu = "uxu";
-    $sco = "sco";
-    $pt = "pt";
-    $me = "me";
 
     if (!empty($_POST)) {
       $id       = $_POST['id'];

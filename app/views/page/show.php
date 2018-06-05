@@ -6,7 +6,7 @@
 <?php case "ded": ?> <!-- DED -->
 
   <div class="fadeOnLoad dedpage">
-    <a href="https://github.com/DylanoH/portfolio" target="_blank" class="fa fa-github fa-2x">Link naar GitHub repo.</a>
+    <a href="https://github.com/DylanoH/portfolio" target="_blank" class="fa fa-github fa-1x"> <span>Link naar GitHub repo.</span></a>
     <div class="sprint1">
 
       <h2>Sprint 1</h2>
@@ -93,68 +93,76 @@
       <div class="code">
         <h3>Login</h3>
         <img src="<?php echo BASE_URL ?>/resources/uploads/logincode.png" class="codesnippit" alt="">
-        <p>asndakjsnd kjasndkj asnkjdnasndakjsnd kjasndkj asnkjdn kjas kjasn</p>
-        <p>asndakjsnd kjasndkj asnkjdnasndakjsnd kjasndkj asnkjdn kjas kjasn</p>
-        <p>asndakjsnd kjasndkj asnkjdnasndakjsnd kjasndkj asnkjdn kjas kjasn</p>
-        <p>asndakjsnd kjasndkj asnkjdnasndakjsnd kjasndkj asnkjdn kjas kjasn</p>
-        <p>asndakjsnd kjasndkj asnkjdnasndakjsnd kjasndkj asnkjdn kjas kjasn</p>
-        <p>asndakjsnd kjasndkj asnkjdnasndakjsnd kjasndkj asnkjdn kjas kjasn</p>
-        <p>asndakjsnd kjasndkj asnkjdnasndakjsnd kjasndkj asnkjdn kjas kjasn</p>
+        <p>Hier is te zien hoe ik mijn login script heb gemaakt.</p>
+        <p>Als eerste checked het script of het form is gesubmit met een "POST" method. Als dit gedaan is gaat het script verder.</p>
+        <p>Het ingevulde username en wachtwoord wordt opgeslagen in een variable.</p>
+        <p>Nu wordt er een database query uitgevoerd die het ID selecteerd van alle users waar de username en wachtwoord overeen komen met de ingevulde username en wachtwoord</p>
+        <p>Daarna worden de rijen geteld en opgeslagen met een true of false of er een rij is of niet.</p>
+        <p>Nu komt er een check die checked of het true of false is. Als het true is wordt er een session variable aangemaakt met de user. Als het false is komt er een error message.</p>
+        <p>Nu kan er overal waar ik zou willen een session gestart kunnen worden en checken of er een gebruiker is ingelogd of niet.</p>
       </div>
-      <div style="clear:both;"></div>
+      <div class="clearfix"></div>
       <div class="code">
         <h3>Delete</h3>
         <img src="<?php echo BASE_URL ?>/resources/uploads/delete.png" class="codesnippit" alt="">
-        <p>asndakjsnd kjasndkj asnkjdnasndakjsnd kjasndkj asnkjdn kjas kjasn</p>
-        <p>asndakjsnd kjasndkj asnkjdnasndakjsnd kjasndkj asnkjdn kjas kjasn</p>
+        <p>Dit is het klein scriptje om een opdracht te verwijderen uit de database.</p>
+        <p>Als er op een knop wordt geklikt wordt er een id meegegeven in de URL. Als eerste wordt er gechecked of er ook daadwerkelijk een ID is meegegeven.</p>
+        <p>Als dit zo is wordt er een query uitgevoerd die een hele rij verwijderd met dat ID.</p>
+
       </div>
-      <div style="clear:both;"></div>
+      <div class="clearfix"></div>
       <div class="code">
         <h3>Edit</h3>
         <img src="<?php echo BASE_URL ?>/resources/uploads/edit1.png" class="codesnippit" alt="">
         <img src="<?php echo BASE_URL ?>/resources/uploads/edit2.png" class="codesnippit" alt="">
-        <p>asndakjsnd kjasndkj asnkjdnasndakjsnd kjasndkj asnkjdn kjas kjasn</p>
-        <p>asndakjsnd kjasndkj asnkjdnasndakjsnd kjasndkj asnkjdn kjas kjasn</p>
+        <p>Het edit script is vooral een uitgebreide versie van het toevoegen van een pagina. In de html zit er vooral het verschil dat er text uit de database gehaald wordt en er neer zet.</p>
+        <p>Als de pagina niet leeg is worden er als eerste variablen gemaakt v</p>
+
       </div>
-      <div style="clear:both;"></div>
+      <div class="clearfix"></div>
       <div class="code">
         <h3>List</h3>
         <img src="<?php echo BASE_URL ?>/resources/uploads/list1.png" class="codesnippit" alt="">
         <img src="<?php echo BASE_URL ?>/resources/uploads/list2.png" class="codesnippit" alt="">
         <p>asndakjsnd kjasndkj asnkjdnasndakjsnd kjasndkj asnkjdn kjas kjasn</p>
       </div>
-      <div style="clear:both;"></div>
+      <div class="clearfix"></div>
       <div class="code">
         <h3>Page</h3>
         <img src="<?php echo BASE_URL ?>/resources/uploads/page.png" class="codesnippit" alt="">
         <p>asndakjsnd kjasndkj asnkjdnasndakjsnd kjasndkj asnkjdn kjas kjasn</p>
       </div>
-      <div style="clear:both;"></div>
-      <div class="code">
-        <h3>Page</h3>
-        <img src="<?php echo BASE_URL ?>/resources/uploads/page.png" class="codesnippit" alt="">
-        <p>asndakjsnd kjasndkj asnkjdnasndakjsnd kjasndkj asnkjdn kjas kjasn</p>
-      </div>
-      <div style="clear:both;"></div>
+      <div class="clearfix"></div>
       <div class="code">
         <h3>Fade in left</h3>
         <img src="<?php echo BASE_URL ?>/resources/uploads/fadeleft.png" class="codesnippit" alt="">
-        <p>asndakjsnd kjasndkj asnkjdnasndakjsnd kjasndkj asnkjdn kjas kjasn</p>
+        <p>Dit stukje code zorgt ervoor dat alle items met de fadeInLeft class verschijnen met een fade.</p>
+        <p>Bij ieder item wordt er gekeken naar de positie van de bovenkant van het item. </p>
+        <p>Ook word ter bij iedere scroll de positie bepaald van het scherm.</p>
+        <p>Dan wordt er gekeken of de positie van het scherm groter is dan de positie van de bovenkant van het item, en dan wordt de animatie uitgevoerd.</p>
+        <p>Ik heb de boven positie van een item nog -300 meegegeven zodat de animatie eerder gebeurd dan als je er pas op zit.</p>
       </div>
-      <div style="clear:both;"></div>
+      <div class="clearfix"></div>
       <div class="code">
         <h3>Fade on load</h3>
         <img src="<?php echo BASE_URL ?>/resources/uploads/fadeload.png" class="codesnippit" alt="">
-        <p>asndakjsnd kjasndkj asnkjdnasndakjsnd kjasndkj asnkjdn kjas kjasn</p>
+        <p>Dit is een stukje code dat ervoor zorgt dat opdrachten inladen zodra de pagina laad.</p>
+        <p>Eerst zorgt er een regel voor dat de fadeOnLoad class wordt verwijderd bij iedere opdracht na de eerste 3. Deze krijgen de class fadeInLeft.</p>
+        <p>Dit doet de :gt() functie. Dit staat eigenlijk voor Greater Than. In mijn geval is dit 2, dus na de derde (0, 1, 2).</p>
+        <p>Bij ieder item met de fadeOnLoad class veranderd de opacity naar 1 en de margin-left wordt weggehaald.</p>
+        <p>De setTimeOut() zorgt ervoor dat dit gebeurt na iedere aangegeven tijd (800 ms in mijn geval).</p>
       </div>
-      <div style="clear:both;"></div>
+      <div class="clearfix"></div>
       <div class="code">
         <h3>SCSS nest trap</h3>
         <img src="<?php echo BASE_URL ?>/resources/uploads/scss.png" class="codesnippit" alt="">
         <img src="<?php echo BASE_URL ?>/resources/uploads/css.png" class="codesnippit" alt="">
-        <p>asndakjsnd kjasndkj asnkjdnasndakjsnd kjasndkj asnkjdn kjas kjasn</p>
+        <p>SCSS is soort van uitbreiding voor CSS. SCSS geeft je de onder andere mogelijkheid om variablen aan te maken, functies te maken en nests te gebruiken.</p>
+        <p>Dit compile je dan om naar normaal CSS.</p>
+        <p>Ik ben zelf een beetje in de nest trap gevallen. Dit is door erg diep te gaan in de nests met styling. In SCSS lijkt dit heel fijn en goed te gaan, maar uiteindelijk zorgt dit voor extreem specifieken selectors.</p>
+        <p>Dit is in het algemeen niet per se een probleem, maar het kan er wel voor zorgen dat het minder overzichterlijk wordt en je mischien meer styling toevoegd dan nodig is.</p>
       </div>
-      <div style="clear:both;"></div>
+      <div class="clearfix"></div>
 
 
     </div>
