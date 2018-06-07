@@ -14,6 +14,7 @@
       Ik had een contactformulier opgezet met een PHP en Javascript validatie. Als alles correct
       is ingevuld wordt de mail verstuurd.
     </p>
+    <img src="<?php echo BASE_URL ?>/resources/downloads/formval.png" class="pagestyling" alt="">
     <p>
       Ik had best wel moeite met het verzinnen van een ontwerp voor mijn portfolio pagina.
       Ik heb erg veel inspiratie websites bekeken en verschillende schetsen gemaakt. Ik heb
@@ -26,9 +27,9 @@
       Na de schetsen ben ik begonnen het ontwerp te maken in Adobe XD.
     </p>
     <p><b>Iteratie 1: schets</b></p>
-    <img src="<?php echo BASE_URL ?>/resources/uploads/schets1.png" alt="">
-    <img src="<?php echo BASE_URL ?>/resources/uploads/schets2.png" alt="">
-    <img src="<?php echo BASE_URL ?>/resources/uploads/schets3.png" alt="">
+    <img src="<?php echo BASE_URL ?>/resources/uploads/schets1.png" class="schets" alt="">
+    <img src="<?php echo BASE_URL ?>/resources/uploads/schets2.png" class="schets" alt="">
+    <img src="<?php echo BASE_URL ?>/resources/uploads/schets3.png" class="schets" alt="">
     <p><b>Feedback / Reflectie:</b></p>
     <p>
       Ik heb het concept laten zien aan de leraar en hij was er erg tevreden mee. Als tip over
@@ -49,57 +50,103 @@
     </p>
     <a href="<?php echo BASE_URL ?>/process/sprint1" target="_blank" class="fa fa-link"> <span>Link naar portfolio versie van Sprint 1</span></a>
   </div>
+
   <hr>
+
   <div class="sprint2">
     <h2>Sprint 2</h2>
-    <p>Ik heb mij in de tweede sprint vooral beziggehouden met het volgen van een tutorial en
-      het opbouwen van een CMS systeem. Deze tutorial heb ik succesvol afgerond en heb hier veel van geleerd.
-      Ik zal veel aan de tutorial hebben voor het opbouwen van mijn eigen portfolio.
+    <p>Ik heb mij in de tweede sprint vooral beziggehouden met het volgen van de CMS tutorial die op canvas staat.
+      Deze tutorial heb ik succesvol afgerond en heb hier veel van geleerd. Wat ik hier vooral van heb geleerd is queries uitvoeren met PHP en deze gebruiken door de output in een array te stoppen.
+      Door op deze manier alle informatie uit de database te halen die ik nodig heb was het ook duidelijk hoe mijn logica gerelateerde code gescheide is van mijn views. Ik ben erachter gekomen dat dit
+      een basis opzet is van een Model View Controller.
     </p>
-    <p>
-      Ik vond dit eigenlijk best lastig, vooral door de weinige PHP ervaring dat ik heb. Ik heb
-      veel geleerd van de tutorial en zal hier veel van kunnen gebruiken. Graag wil ik een nieuwe
-      CMS starten met zo min mogelijk hulp van de tutorial om te zorgen dat ik het wel echt
-      zelf kan. Ik zou zelf zowiezo een aantal code gerelateerde dingen anders doen dan de
-      tutorial.
+    <p>Ook heb ik hier geleerd om een alternatieve syntax te gebruiken voor control structures als IF statements en FOREACH loops. Wat ik hier mee bedoel is om in plaats van de standaard
+       "if(..) { echo html hier }" syntax te gebruiken, gebruik ik nu if(): html endif; Dit zorgt ervoor dat de html overzichterlijk blijft.
     </p>
+    <img src="<?php echo BASE_URL ?>/resources/downloads/altsyntax.png" alt="">
+    <p> Graag wil ik een nieuwe CMS starten met zo min mogelijk hulp van de tutorial om te zorgen dat ik het wel echt zelf kan. (toevoeging eind sprint 5: dit heb ik uiteindelijk niet gedaan. Wel voel ik me comfortabel genoeg met PHP dat ik zeker weet dat ik dat kan.)</p>
     <a href="<?php echo BASE_URL ?>/process/sprint2" target="_blank" class="fa fa-link"> <span>Link naar portfolio versie van Sprint 2</span></a>
   </div>
+
   <hr>
+
   <div class="sprint3">
     <h2>Sprint 3</h2>
-    <p>Ik heb me in de derde sprint vooral bezig gehouden met de back-end van het portfolio. Deze is compleet klaar
-       op een paar kleine details die beter of anders kunnen. De front-end heb ik nog niet veel mee gedaan, maar ik vind
-       het belangrijker dat de back-end volledig werkt. Ik zie het alsof de fundering nu goed staat. Hierop is makkelijk
-       bovenop te bouwen.</p>
+    <p>Ik heb me in de derde sprint vooral bezig gehouden met de back-end van het portfolio. Deze is compleet op image en file upload na. De front-end had ik nog niet veel mee gedaan, maar ik vind
+       het belangrijker dat de back-end volledig werkt. Ik zie het alsof de fundering nu goed staat. Hierop is makkelijk bovenop te bouwen.</p>
+
+       <p><b>Admin panel verandering</b></p>
+       <p>Ik had in eerste instantie het admin panel opgebouwd met een tabel, omdat ik het ook zag als een soort tabel. Het probleem hiermee was dat de opdrachten wel onder het juiste kopje kwamen te staan, maar niet direct onder elkaar
+          Er kon maar 1 opdracht staan op 1 rij, dus er was heel veel onnodige white space tussen veel opdrachten.
+       </p>
+       <p>
+         Ik had het hier met Frank over en kwamen er achter dat het beter is om een list te gebruiken, want ieder list item komt beter in een list te staan. Hier was een extra loop en if statement nodig om goed te checken welke opdracht bij welk vak hoorden.
+       </p>
+       <img src="<?php echo BASE_URL ?>/resources/downloads/listcode.png" class="pagestyling" alt="">
     <a href="<?php echo BASE_URL ?>/process/sprint3" target="_blank" class="fa fa-link"> <span>Link naar portfolio versie van Sprint 3</span></a>
   </div>
+
   <hr>
+
   <div class="sprint4">
     <h2>Sprint 4</h2>
     <p>Deze sprint heb ik me vooral beziggehouden met image en file upload. Het heeft me even geduurd om dit te begrijpen.
-       Ik weet nu niet echt waarom ik hier zo veel moeite mee had. Nu ik hierop terugkijk valt t wel mee en lijkt het vrij simpel.</p>
+       Het grootste probleem dat ik hiermee had is begrijpen wat er nou met de image moest gebeuren in de database. Hier kwamen allerlei vragen bij me op;
+       Moet de hele afbeelding in de databse? Moet het hele pad in de database? Kan de image opgeslagen worden in een map?
+    </p>
+    <p>Ik kwam er al gauw achter dat de hele afbeelding NIET in de database moet.</p>
+    <p>Max heeft me geholpen om de image upload op te zetten. Door zijn eigen code erbij te pakken en die uit te leggen werd het me duidelijk.
+       In de database worden alleen de namen van de afbeeldingen opgeslagen en de afbeeldingen worden gekopieerd en in een map in de site gezet. Op deze manier
+       hoeft er bij het ophalen van de afbeelding alleen maar de afbeelding naam uit de database gehaald te worden terwijl de locatie hetzelfde blijft bij iedere afbeelding.
+    </p>
+    <p><b>Instagram API</b></p>
+    <p>Ik heb in deze sprint een Instagram API opgezet in de website voor Moeders Mooiste.</p>
+    <p>Dit was me toch een gedoe. Ik heb allerlei tutorials gevolgd om er uiteindelijk achter te komen dat het niet mogelijk is om afbeeldingen op te halen van een andere gebruiker dan jezelf zonder toestemming.
+       Hiervoor vond ik de Instagram documentatie veel te wazig omdat je een of ander SandBox link moest sturen waarvan ik nog steeds niet weet hoe dat werkt. Ik heb het geprobeerd met 2 verschillende accounts van mijzelf en snapte het nog steeds niet.
+       Na een tijdje het hebben opgegeven kwam ik deze library tegen: <a href="http://instafeedjs.com/">http://instafeedjs.com/</a>. Dit gaf me hoop om het toch te proberen.
+    </p>
+    <p>
+       Ik heb als "dirty fix" foto's van Moeders Mooiste gekopieerd en op een eigen account geupload genaamd "Moeders Mooisten". Doordat dit mijn eigen account is kon ik dit wel gebruiken binnen de API call en kon ik met de library erg makkelijk foto's van Instagram zien op onze site.
+    </p>
+    <img src="<?php echo BASE_URL ?>/resources/downloads/instafeed.jpg" alt="" class="pagestyling">
     <p>Verder heb ik me deze sprint beziggehouden met een nieuwe huisstijl, een paar kleine aanpassingen in de back-end en begonnen
        aan het opbouwen van de front-end. Ik heb het huisstijl omgegooid van een donkere stijl naar een simplistische witte stijl.
        Dit heb ik gedaan omdat ik deze stijl ergens anders zag en ik vond het zelf erg prettig. Voor het eerst begon ik het design
        ook zelf goed te vinden.
     </p>
+    <img src="<?php echo BASE_URL ?>/resources/downloads/homestyling.png" class="pagestyling" alt="">
     <a href="<?php echo BASE_URL ?>/process/sprint4" target="_blank" class="fa fa-link"> <span>Link naar portfolio versie van Sprint 4</span></a>
   </div>
+
   <hr>
+
   <div class="sprint5">
     <h2>Sprint 5</h2>
-    <p>Deze sprint zijn er de meeste aanpassingen geweest aan het portfolio. Ik heb hier een login systeem gemaakt, styling gedaan voor
-       vrijwel iedere pagina, een navigatie gemaakt, veel knoppen en icoontjes toegevoegd, alle content toegevoegd, javascript toegevoegd
-       en delen van mijn code opgeschoond.
-    </p>
-    <p>
-      Ik voelde me inmiddels vrij comfortabel met PHP en heb ook daadwerkelijk het gevoel alsof ik hier producten mee zou kunnen maken.
-      Javascript heb ik niet heel erg veel gedaan dit semester. Wel heb ik er een aantal animaties mee gemaakt.
-    </p>
+    <p>Deze sprint zijn er de meeste aanpassingen geweest aan het portfolio.</p>
+    <p><b>Login systeem</b></p>
+    <p>Ik heb deze tutorial gebruikt bij het maken van het login systeem: <a href="https://www.tutorialspoint.com/php/php_mysql_login.html">https://www.tutorialspoint.com/php/php_mysql_login.htm</a></p>
+    <p>Het eerste probleem dat ik tegen kwam was dat ik moest begrijpen hoe sessions werken. Een kijkje op Google doet wonderen en dus kwam ik er al gauw achter hoe sessions werken.</p>
+    <p>Verder was er nog een probleem dat in de code van de tutorial gebruik wordt gemaakt van de mysqli manier in plaats van de PDO manier die ik gebruik.</p>
+    <p>Dit bleek achteraf ook niet echt een probleem te zijn omdat ik comfortabel genoeg ben met PHP om dit om te zetten naar PDO.</p>
+
+    <p><b>Styling voor pagina's gemaakt, knoppen en icoontjes toegevoegd.</b></p>
+    <p>Ik heb voor alle pagina's de styling gemaakt in de simplistische huisstijl die ik heb opgezet.</p>
+    <img src="<?php echo BASE_URL; ?>/resources/downloads/pagestyling.png" class="pagestyling" alt="">
+    <img src="<?php echo BASE_URL; ?>/resources/downloads/addstyling.png" class="pagestyling" alt="">
+
+    <p><b>Javascript animaties</b></p>
+    <p>Ik bij de vakken van de opdrachten JavaScript animaties toegevoegd. Dit geeft extra dynamiek op de site en maakt het net iets meer levendig.</p>
+    <video  controls width="100%">
+      <source src="<?php echo BASE_URL ?>/resources/downloads/animaties.mp4" type="video/mp4">
+    </video>
+    <p>Ik voelde me inmiddels vrij comfortabel met PHP en heb ook daadwerkelijk het gevoel alsof ik hier producten mee zou kunnen maken.</p>
+
     <a href="<?php echo BASE_URL ?>" target="_blank" class="fa fa-link"> <span>Link naar portfolio versie van Sprint 5</span></a>
   </div>
-  <div class="sprint5">
+
+  <hr>
+
+  <div class="leerdoelen">
     <h2>Leerdoelen voor de aankomende tijd</h2>
     <p><b>PHP</b></p>
     <p>Ik wil iets comfortabeler zijn met PHP voodat ik een framework als CodeIgnitor of Laravel ga proberen. Wel wil hier al vrij snel
@@ -120,7 +167,10 @@
        Ik heb nu nog vrijwel niet gekeken naar het resonsive maken van een website, maar ik weet dat grid er erg mee zou helpen.
      </p>
   </div>
+
   <hr>
+
+  <!-- Code snippits -->
   <div class="codes">
     <h2>Code snippits</h2>
     <div class="code">
