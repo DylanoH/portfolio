@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+
 <?php require VIEW_ROOT . '/templates/header.php'; ?>
 
 
