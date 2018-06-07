@@ -1,6 +1,7 @@
 <?php
-  require '../app/start.php';
   session_start();
+  require '../app/start.php';
+
   $error = "";
 
   if($_SERVER["REQUEST_METHOD"] == "POST") {

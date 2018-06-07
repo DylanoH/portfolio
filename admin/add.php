@@ -1,8 +1,8 @@
 <?php
-
+  session_start();
   require '../app/start.php';
 
-  session_start();
+
   if (isset($_SESSION['user'])) {
     if (!empty($_POST)) {
       $title    = $_POST['title'];

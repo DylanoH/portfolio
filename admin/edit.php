@@ -1,6 +1,7 @@
 <?php
-  require '../app/start.php';
   session_start();
+  require '../app/start.php';
+
 
   if (isset($_SESSION['user'])) {
 

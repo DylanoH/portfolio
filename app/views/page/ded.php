@@ -205,11 +205,14 @@
     <div class="code">
       <h3>Shows API voor Moeders Mooiste</h3>
       <img src="<?php echo BASE_URL ?>/resources/uploads/shows.png" class="codesnippit" alt="">
-      <p>Dit is een stukje code dat ervoor zorgt dat opdrachten inladen zodra de pagina laad.</p>
-      <p>Eerst zorgt er een regel voor dat de fadeOnLoad class wordt verwijderd bij iedere opdracht na de eerste 3. Deze krijgen de class fadeInLeft.</p>
-      <p>Dit doet de :gt() functie. Dit staat eigenlijk voor Greater Than. In mijn geval is dit 2, dus na de derde (0, 1, 2).</p>
-      <p>Bij ieder item met de fadeOnLoad class veranderd de opacity naar 1 en de margin-left wordt weggehaald.</p>
-      <p>De setTimeOut() zorgt ervoor dat dit gebeurt na iedere aangegeven tijd (800 ms in mijn geval).</p>
+      <p>Dit is code die zorgt voor de show sectie van onze Moeders Mooiste site.</p>
+      <p>Als eerste worden er een paar variablen aangemaakt voor voor selectors</p>
+      <p>Ik heb 3 functies die gebruikt worden in de AJAX API call naar BandsInTown.</p>
+      <p>De eerste functie zorgt ervoor dat bij dagen en maanden een "0" wordt toegevoegd als de dag en maand minder is als 10. Dus dag "3" wordt "03". Dit is nodig voor de API call.</p>
+      <p>De tweede functie checked in de API call of er al tickets te koop zijn op dagen waar een show is. Als er tickets te koop zijn verschijnt er een knop die linkt naar de kaart verkoop, als niet verschijnt er een knop die linkt naar meer info over het optreden.</p>
+      <p>De derde functie voegt alle informatie toe in een rij van shows. De Date functie wordt hier gebruikt om de juiste datums te laten zien.</p>
+      <p>Deze functies worden gebruikt in de AJAX API call. De API stuurt JSON informatie terug die makkelijk te gebruiken is de code.</p>
+
     </div>
     <div class="clearfix"></div>
     <div class="code">
@@ -219,13 +222,11 @@
       <p>SCSS is soort van uitbreiding voor CSS. SCSS geeft je de onder andere mogelijkheid om variablen aan te maken, functies te maken en nests te gebruiken.</p>
       <p>Dit compile je dan om naar normaal CSS.</p>
       <p>Ik ben zelf een beetje in de nest trap gevallen. Dit is door erg diep te gaan in de nests met styling. In SCSS lijkt dit heel fijn en goed te gaan, maar uiteindelijk zorgt dit voor extreem specifieken selectors.</p>
-      <p>Dit is in het algemeen niet per se een probleem, maar het kan er wel voor zorgen dat het minder overzichterlijk wordt en je mischien meer styling toevoegd dan nodig is.</p>
+      <p>Dit is in het algemeen niet per se een probleem, maar het kan er wel voor zorgen dat het minder overzichterlijk wordt en je misschien meer styling toevoegd dan nodig is.</p>
     </div>
     <div class="clearfix"></div>
-    <a href="https://drive.google.com/file/d/1TaDL5yXzuDxajSu0ZDlWGdqPlNWLGUYh/view?usp=sharing" target="_blank" class="fa fa-link"> <span>Link naar Checklist</span></a>
-
-
-
+    <h2>Checklist</h2>
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRnIhKorK2A0AV0Ecy2cdjtU1bUfrl2FJbrn1_cUHWOsujtdZh41sTW8LdkdZE46oM7HiXoUI6Ik8GS/pubhtml?gid=730650373&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="640px"></iframe>
   </div>
 
 </div>

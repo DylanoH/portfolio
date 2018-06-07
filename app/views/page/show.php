@@ -1,5 +1,6 @@
-<?php require VIEW_ROOT . '/templates/header.php'; ?>
 <?php session_start(); ?>
+<?php require VIEW_ROOT . '/templates/header.php'; ?>
+
 <div class="assignmentPage">
   <h1><?php echo e($page['body']); ?></h1>
 <?php switch ($slug): ?>

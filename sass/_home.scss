@@ -6,32 +6,40 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  background-color: $black;
 
   .uxu {
     @include course-style();
-
+    &:hover {
+      background-image: url("../resources/downloads/uxu.jpg");
+      background-size: cover;
+    }
   }
 
   .ded {
     @include course-style();
 
     &:hover {
-      background-color: $course-background-color;
-      background-image: url("../resources/coding-bg.jpg");
+      background-image: url("../resources/downloads/coding-bg.jpg");
       background-size: cover;
-
-
     }
   }
 
   .sco {
     @include course-style();
+    &:hover {
+      background-image: url("../resources/downloads/brand-experience.jpg");
+      background-size: cover;
+    }
 
   }
 
   .pt {
     @include course-style();
-
+    &:hover {
+      background-image: url("../resources/downloads/mm.jpg");
+      background-size: cover;
+    }
   }
 
   .me {
@@ -49,6 +57,21 @@
 
     &:hover {
       color: $turquose;
+      background-image: url("../resources/downloads/ik.jpg");
+      background-size: cover;
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+    }
+
+    &:hover >* {
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      transform: rotate(90deg);
     }
   }
 
