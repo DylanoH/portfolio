@@ -16,6 +16,7 @@
 
   try {
     $con = new PDO('mysql:host=mysql.stackcp.com:49649; dbname=cmstutorial-33354415', $dbname, $dbpass);
+        // $con = new PDO('mysql:host=shareddb-i.hosting.stackcp.net; dbname=cmstutorial-33354415', $dbname, $dbpass);
     //echo "connection succesful";
   }
   catch(PDOException  $e) {
