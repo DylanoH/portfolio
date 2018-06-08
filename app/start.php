@@ -5,6 +5,8 @@
   define('APP_ROOT', __DIR__);
   define('VIEW_ROOT', APP_ROOT . '/views');
   define('BASE_URL', 'http://localhost/portfolio');
+  // define('BASE_URL', 'http://portfolio.dylanohartman.com');
+
 
   $dbserver = 'localhost';
   $dbname = 'cmstutorial-33354415';

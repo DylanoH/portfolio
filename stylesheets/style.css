@@ -787,8 +787,18 @@ header .change .hamburger3 {
   float: left;
   margin-right: 30px;
 }
+/* line 183, ../sass/_pages.scss */
+.assignmentPage .me {
+  width: 95vw;
+  height: 90vh;
+  background-image: url("../resources/downloads/thor.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-bottom: 40px;
+}
 
-/* line 184, ../sass/_pages.scss */
+/* line 196, ../sass/_pages.scss */
 .clearfix {
   clear: both;
 }

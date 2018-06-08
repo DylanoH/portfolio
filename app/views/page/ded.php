@@ -108,6 +108,8 @@
     <p>
        Ik heb als "dirty fix" foto's van Moeders Mooiste gekopieerd en op een eigen account geupload genaamd "Moeders Mooisten". Doordat dit mijn eigen account is kon ik dit wel gebruiken binnen de API call en kon ik met de library erg makkelijk foto's van Instagram zien op onze site.
     </p>
+    <img src="<?php echo BASE_URL ?>/resources/downloads/instafeed.png" alt="" class="pagestyling">
+    <p>Met de library is het erg makkelijk om de feed te laden door een div aan te maken en de template van de library te gebruiken.</p>
     <img src="<?php echo BASE_URL ?>/resources/downloads/instafeed.jpg" alt="" class="pagestyling">
     <p>Verder heb ik me deze sprint beziggehouden met een nieuwe huisstijl, een paar kleine aanpassingen in de back-end en begonnen
        aan het opbouwen van de front-end. Ik heb het huisstijl omgegooid van een donkere stijl naar een simplistische witte stijl.

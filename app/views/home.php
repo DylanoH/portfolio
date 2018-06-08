@@ -1,7 +1,5 @@
 
 <?php require VIEW_ROOT . '/templates/header.php'; ?>
-
-
   <div class="courses">
     <?php foreach($pages as $page): ?>
         <a href="<?php echo BASE_URL;?>/page.php?page=<?php echo $page['slug'];?>"  class="course <?php echo $page['slug']; ?>">
