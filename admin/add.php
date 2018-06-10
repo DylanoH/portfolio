@@ -13,6 +13,7 @@
           $name = $_FILES['image']['name']; // Naam van image dat je hebt geupload
           $assignment = $_FILES['assignmentfile']['name']; // Naam van bestand dat je hebt geupload
           $target_directory = "/Portfolio/resources/uploads/"; // Je file directory
+          //$target_directory = "../resources/uploads/"; // Je file directory
           $target_file_image = $target_directory . basename($name); // target_directory en naam van bestand
           $target_file_document = $target_directory . basename($assignment); // target_directory en naam van bestand
           $imageFileType = strtolower(pathinfo($target_file_image, PATHINFO_EXTENSION)); // file extensie .png bijvoorbeeld
@@ -36,7 +37,9 @@
 
             if ($result === true){
                 move_uploaded_file($_FILES['image']['tmp_name'], $_SERVER['DOCUMENT_ROOT'] . $target_file_image); // zet image in de goeie map
-                move_uploaded_file($_FILES['assignmentfile']['tmp_name'], $_SERVER['DOCUMENT_ROOT'] . $target_file_document); // zet bestand in de goeie map
+                move_uploaded_file($_FILES['image']['tmp_name'], $_SERVER['DOCUMENT_ROOT'] . $target_file_image); // zet image in de goeie map
+                //move_uploaded_file($_FILES['assignmentfile']['tmp_name'], $target_file_document); // zet bestand in de goeie map
+                //move_uploaded_file($_FILES['assignmentfile']['tmp_name'], $target_file_document); // zet bestand in de goeie map
                 echo("Het bestand is geupload.");
                 header('Location ' . BASE_URL . '/admin/list.php');
             }

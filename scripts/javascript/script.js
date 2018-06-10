@@ -65,6 +65,7 @@ $(document).ready(function(){
           success: function(result){
             alert(result);
               window.location = "/Portfolio/admin/list.php";
+              //window.location = "/admin/list.php";
           }
       });
   });
@@ -84,6 +85,7 @@ $(document).ready(function(){
           success: function(result){
             alert(result);
               window.location = "/Portfolio/admin/list.php";
+              //window.location = "/admin/list.php";
           }
       });
   });

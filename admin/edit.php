@@ -15,6 +15,7 @@
         $name = $_FILES['image']['name'];
         $assignment = $_FILES['assignmentfile']['name'];
         $target_directory = "/Portfolio/resources/uploads/";
+        //$target_directory = "../resources/uploads/";
         $target_file_image = $target_directory . basename($name);
         $target_file_document = $target_directory . basename($assignment);
         $imageFileType = strtolower(pathinfo($target_file_image, PATHINFO_EXTENSION));
@@ -48,7 +49,9 @@
 
             if ($result === true) {
               move_uploaded_file($_FILES['image']['tmp_name'], $_SERVER['DOCUMENT_ROOT'] . $target_file_image); // zet bestand in de goeie map
-              move_uploaded_file($_FILES['assignmentfile']['tmp_name'], $_SERVER['DOCUMENT_ROOT'] . $target_file_document); // zet bestand in de goeie map
+              move_uploaded_file($_FILES['image']['tmp_name'], $_SERVER['DOCUMENT_ROOT'] . $target_file_image); // zet bestand in de goeie map
+              //move_uploaded_file($_FILES['assignmentfile']['tmp_name'], $target_file_document); // zet bestand in de goeie map
+              //move_uploaded_file($_FILES['assignmentfile']['tmp_name'], $target_file_document); // zet bestand in de goeie map
               echo("Het bestand is geupload.");
             }
             elseif ($result === false) {
