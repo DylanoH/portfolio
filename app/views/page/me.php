@@ -106,3 +106,7 @@
 	});
 	</script>
 </div>
+<div class="">
+	<h2>Zelf portret</h2>
+	<img src="<?php echo BASE_URL ?>/resources/downloads/zelfportret.png" alt="">
+</div>
